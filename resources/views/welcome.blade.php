@@ -1,5 +1,6 @@
 @extends('layout.app')
 @section('content')
+<div style="max-width: 100%; ">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -53,14 +54,15 @@
         <small class="text-muted">TEMAS DE INTERÉS</small>
         </h3><br><br>
       </div>
-      <div class="row" style="width: 100%;">
+      
+      <div class="row">
         <div class="col-sm-12 col-md-6" id="unoslide">
           <img src="{{ asset('img/beca1.jpg') }}" class="img-flui t">
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="row">
             <div class="col-md-6 col-sm-12" >
-              <img src="{{ asset('img/beca2.jpg') }}" class="img-fluid" id="dosslid">
+              <img src="{{ asset('img/beca2.jpg') }}" class="img-fluid" id="dosslid" >
             </div>
           </div>
           <div class="row">
@@ -165,6 +167,25 @@
   </div>
 </div>
 </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+   <div class="row">
+     <div class="col-md-4">
+        <figure class="figure">
+            <img src="{{ asset('img/edo.jpg') }}" style="height:150px; width:200px;" class="figure-img img-fluid" alt="Edo. Mex.">
+        </figure>
+     </div>
+     <div class="col-md-4">
+        <figure class="figure">
+            <img src="{{ asset('img/conagua.jpg') }}" style="height:100px; width:200px;" class="figure-img img-fluid" alt="Edo. Mex.">
+        </figure>
+      </div>
+   </div>
+  </div>
+</div>
+
 </div>
     
 @endsection

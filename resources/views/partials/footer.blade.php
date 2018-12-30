@@ -34,10 +34,9 @@
                 <h4>SERVICIOS EN LÍNEA</h4>
                 <ul class="list-unstyled">
                   <li><a href="#"></a></li>
-                  <li><a href="#">Pago de agua</a></li>
-                  <li><a href="#">Trámite Catastral</a></li>
-                  <li><a href="#">Pago Predial</a></li>
-                  <li><a href="#">Traslado de Dominio</a></li>
+                  <li><a href="https://www.ayst.gob.mx/portal/">Agua y saneamiento</a></li>
+                  <li><a href="http://igecem.edomex.gob.mx/tramites_servicios">Trámite Catastral</a></li>
+                  <li><a href="http://finanzas.edomex.gob.mx/impuesto_predial">Pago Predial</a></li>
                 </ul>
               </div>
             </div>
@@ -46,11 +45,11 @@
               <div class="footer-pad">
                 <h4>ACCESOS RÁPIDOS</h4>
                 <ul class="list-unstyled">
-                  <li><a href="#">Gobierno</a></li>
-                  <li><a href="#">Trámites y Servicios</a></li>
-                  <li><a href="#">Sala de Prensa</a></li>
-                  <li><a href="#">Transparencia</a></li>
-                  <li><a href="#">Programas y Acciones</a></li>
+                  <li><a href="{{ url('/') }}">Gobierno</a></li>
+                  <li><a href="{{ url('/') }}">Trámites y Servicios</a></li>
+                  <li><a href="{{ url('/prensa') }}">Sala de Prensa</a></li>
+                  <li><a href="{{ url('/') }}">Transparencia</a></li>
+                  <li><a href="{{ url('/') }}">Programas y Acciones</a></li>
                 </ul>
               </div>
             </div>
@@ -59,11 +58,10 @@
               <div class="footer-pad">
                 <h4>CONTACTO</h4>
                 <ul class="list-unstyled">
-                  <li><a href="#">(722) 276 19 00</a></li>
-                  <li><a href="#">Public Works</a></li>
-                  <li><a href="#">Police Department</a></li>
-                  <li><a href="#">Fire</a></li>
-                  <li><a href="#">Mayor and City Council</a></li>
+                  <li><a href="">H.Ayuntamiento</a></li>
+                  <li><a href="">(722) 276 19 00</a></li>
+                  <li><a href="">Comisión estatal de Seguridad Ciudadana</a></li>
+                  <li><a href="">066</a></li>
                   <li>
                     <a href="#"></a>
                   </li>
