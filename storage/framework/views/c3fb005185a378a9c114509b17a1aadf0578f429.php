@@ -30,6 +30,30 @@
         <li class="nav-item">
           <a class="nav-link" href="/contacto">CONTACTO</a>
         </li>
+        <?php if(auth()->guard()->guest()): ?>
+        <?php else: ?>
+          <li class="nav-item dropdown">
+              <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                  <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
+              </a>
+
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="<?php echo e(route('admin.posts')); ?>">
+                      Administrar publicaciones
+                  </a>
+                  <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
+                      onclick="event.preventDefault();
+                                      document.getElementById('logout-form').submit();">
+                      <?php echo e(__('Logout')); ?>
+
+                  </a>
+
+                  <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+                      <?php echo csrf_field(); ?>
+                  </form>
+              </div>
+          </li>
+        <?php endif; ?>
         </ul>
         <!-- <form class="form-inline mt-2 mt-md-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">

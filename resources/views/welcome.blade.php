@@ -11,23 +11,27 @@
           <div class="carousel-item active">
             <img class="first-slide" id="uno" src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/201000/201880-Toluca-Cathedral.jpg" alt="First slide">
             <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>Municipio de Toluca.</h1>
-                <p>Cambios que generan tu bienestar</p>
+              <div class="carousel-caption text-right">
+                <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
+                <p class=" bg-dark text-white"> Cambios que generan bienestar para ti</p>
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+          @foreach($banner as $im)
+            <div class="carousel-item">
+              <img class="second-slide" src="{{asset('images/'.$im->image->name)}}" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption text-right">
+                  <h1 class=" bg-dark text-white">{{$im->titulo}}.</h1>
+                  <p class=" bg-dark text-white">{{$im->subtitulo}}</p>
+                  <p class=" bg-dark text-white">{{$im->contenido}}</p>
+                  <p><a class="btn btn-lg btn-primary" target="_blank"  href="{{$im->link}}" role="button">Saber mas</a></p>
+                </div>
               </div>
             </div>
-          </div>
+          @endforeach
+          <!--
           <div class="carousel-item">
             <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
             <div class="container">
@@ -37,7 +41,7 @@
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','PostsController@inicio')->name('welcome');
 
 Route::view('/cabildo','app.cabildo');
 Route::view('/prensa','app.prensa');
@@ -27,6 +25,7 @@ Route::get('image-get', 'ImageUploadController@getImages')->name('image.get');
 Route::post('publicacion-up', 'PostsController@createPost')->name('publicacion.up');
 Route::get('/posts', 'PostsController@index')->name('posts');
 Route::get('/admin-posts', 'PostsController@admin')->name('admin.posts');
+
 
 Auth::routes();
 

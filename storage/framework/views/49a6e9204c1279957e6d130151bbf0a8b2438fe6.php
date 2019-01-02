@@ -10,6 +10,11 @@
                 </ul>
             </div>
         <?php endif; ?>
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4"><a href="/admin-posts" class="btn btn-primary">Administrar publicaciones</a></div><br><br>
+
+        </div>
         <form action="<?php echo e(route('publicacion.up')); ?>" method="POST" enctype="multipart/form-data">
             <?php echo csrf_field(); ?>
             <div class="form-group">

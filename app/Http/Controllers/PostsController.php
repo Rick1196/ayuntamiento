@@ -9,9 +9,49 @@ use App\Image;
 
 use DB;
 class PostsController extends Controller{
-    public function getPosts()
+    public function getSecciones(){
+        return Secciones::all();
+    }
+
+    public function getPosts(Request $data)
     {
-        return Post::all();
+        $filtro = $data['filtro'];
+        if($filtro == 'todos'){
+            return Post::with('image')->orderBy('created_at', 'desc')->paginate(5);
+        }
+        elseif($filtro == 'carousel'){
+            return Post::with('image')->where('seccion_id',1)->orderBy('created_at', 'desc')->paginate(5);
+        }
+        elseif($filtro == 'convocatorias'){
+            return Post::with('image')->where('seccion_id',2)->orderBy('created_at', 'desc')->paginate(5);
+        }
+        elseif($filtro == 'tv'){
+            return Post::with('image')->where('seccion_id',3)->orderBy('created_at', 'desc')->paginate(5);
+        }
+    }
+
+
+    public function inicio(){
+        $banner = Post::with('image')->where('seccion_id',1)->where('activado',true)->orderBy('created_at', 'desc')->get();
+        return View::make("welcome", compact('banner'));
+    }
+
+    public function activar(Request $data){
+        DB::table('posts')
+            ->where('id', $data['id'])
+            ->update(['activado' => true]);
+    }
+
+    public function desactivar(Request $data){
+        DB::table('posts')
+            ->where('id', $data['id'])
+            ->update(['activado' => false]);
+    }
+
+    public function delete(Request $data){
+        DB::table('posts')
+            ->where('id', $data['id'])
+            ->delete();
     }
 
     public function index()
@@ -37,7 +77,8 @@ class PostsController extends Controller{
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'titulo' => 'required',
             'subtitulo' => 'required',
-            'seccion' => 'required'
+            'seccion' => 'required',
+            'link' => 'required'
         ];
         
         $this->validate(request(), $rules, $messages);

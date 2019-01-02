@@ -12,10 +12,12 @@
             </div>
         
         @endif
+        <br><br>
         <div class="row">
             <div class="col-md-8"></div>
-            <div class="col-md-4"><button class="btn btn-primary">Crear publicacion</button></div>
-        </div>
+            <div class="col-md-4"><a href="/posts" class="btn btn-primary">Crear publicacion</a></div>
+        </div><br><br>
+        <admin-posts></admin-posts>
 
     </div>
 @endsection
