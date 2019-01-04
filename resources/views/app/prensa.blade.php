@@ -2,6 +2,12 @@
 @section('content')
 @include('partials.title-head',['title' => 'COMUNICADOS DE PRENSA','subtitle'=>'NOTICIAS RELEVANTES'])
 <div class="container">
+<div class="container">
+<center>
+    <img class="img-fluid" src="{{asset('img/construccion.jpg')}}" alt="">
+    </center>
+</div>
+<!--
   <div class="row" style="border-bottom:3px solid red;">
     <div class="col-md-4">
         <div class="alert alert-danger" role="alert">
@@ -157,6 +163,6 @@
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-</div>
+</div>-->
 </div>
 @endsection

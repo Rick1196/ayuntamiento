@@ -2,6 +2,12 @@
 <?php $__env->startSection('content'); ?>
 <?php echo $__env->make('partials.title-head',['title' => 'COMUNICADOS DE PRENSA','subtitle'=>'NOTICIAS RELEVANTES'], \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <div class="container">
+<div class="container">
+<center>
+    <img class="img-fluid" src="<?php echo e(asset('img/construccion.jpg')); ?>" alt="">
+    </center>
+</div>
+<!--
   <div class="row" style="border-bottom:3px solid red;">
     <div class="col-md-4">
         <div class="alert alert-danger" role="alert">
@@ -157,7 +163,7 @@
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-</div>
+</div>-->
 </div>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layout.app', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

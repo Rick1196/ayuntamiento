@@ -18,6 +18,8 @@ Route::view('/prensa','app.prensa');
 Route::view('/contacto','app.contacto');
 Route::view('/toluca','app.toluca');
 Route::view('/transparencia','app.transparencia')->name('app.transparencia');
+Route::view('/dependencias','app.dependencias')->name('app.dependencias');
+
 Route::view('/tramites-servicios','app.tramites')->name('tramites.servicios');
 Route::view('/gestion-municipal','app.gestiones')->name('gestion.municipal');
 Route::view('/login','auth.login');

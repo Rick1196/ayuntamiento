@@ -2,6 +2,12 @@
 @section('content')
 @include('partials.title-head',['title' => 'NUESTRO MUNICIPIO','subtitle'=>''])
 <div class="container">
+<div class="container">
+<center>
+    <img class="img-fluid" src="{{asset('img/construccion.jpg')}}" alt="">
+    </center>
+</div>
+<!--
 <h3 class="red-text">
     <strong >DIRECTORIO TURÍSTICO</strong>
     <small class="text-muted">TOLUCA</small>
@@ -12,6 +18,7 @@
 <!--Accordion wrapper-->
 <div class="accordion md-accordion accordion-3 z-depth-1-half" id="accordionEx1" role="tablist"
 aria-multiselectable="true">
+<!--
 
 <ul class="list-unstyled d-flex justify-content-center pt-4 red-text">
   <li><i class="fa fa-building mr-3 fa-4x" aria-hidden="true"></i></li>
@@ -23,11 +30,15 @@ aria-multiselectable="true">
 <h2 class="text-center text-uppercase py-4 px-3">EDIFICIOS GUBERNAMENTALES</h2>
 
 <hr class="mb-0">
+<!--
+<!-
+<!-- Accordion card --><!--
 
-<!-- Accordion card -->
 <div class="card">
 
   <!-- Card header -->
+  <!--
+
   <div class="card-header" role="tab" id="heading4">
     <a data-toggle="collapse" data-parent="#accordionEx1" href="#collapse4" aria-expanded="true"
       aria-controls="collapse4">
@@ -38,6 +49,8 @@ aria-multiselectable="true">
   </div>
 
   <!-- Card body -->
+  <!--
+
   <div id="collapse4" class="collapse show" role="tabpanel" aria-labelledby="heading4" data-parent="#accordionEx1">
     <div class="card-body pt-0">
       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
@@ -57,6 +70,8 @@ aria-multiselectable="true">
 <div class="card">
 
   <!-- Card header -->
+  <!--
+
   <div class="card-header" role="tab" id="heading5">
     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse5" aria-expanded="false"
       aria-controls="collapse5">
@@ -67,6 +82,8 @@ aria-multiselectable="true">
   </div>
 
   <!-- Card body -->
+  <!--
+
   <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx1">
     <div class="card-body pt-0">
       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
@@ -83,9 +100,13 @@ aria-multiselectable="true">
 <!-- Accordion card -->
 
 <!-- Accordion card -->
+<!--
+
 <div class="card">
 
   <!-- Card header -->
+  <!--
+
   <div class="card-header" role="tab" id="heading6">
     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse6" aria-expanded="false"
       aria-controls="collapse6">
@@ -96,6 +117,8 @@ aria-multiselectable="true">
   </div>
 
   <!-- Card body -->
+  <!--
+
   <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx1">
     <div class="card-body pt-0">
       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
@@ -112,6 +135,8 @@ aria-multiselectable="true">
 <!-- Accordion card -->
 </div>
 <!--/.Accordion wrapper-->
+<!--
+
         </div>
         {{-- Second CARD --}}
         <div class="col-md-4">
@@ -130,9 +155,13 @@ aria-multiselectable="true">
                 <hr class="mb-0">
                 
                 <!-- Accordion card -->
+                <!--
+
                 <div class="card">
                 
                   <!-- Card header -->
+                  <!--
+
                   <div class="card-header" role="tab" id="heading7">
                     <a data-toggle="collapse" data-parent="#accordionEx2" href="#collapse7" aria-expanded="true"
                       aria-controls="collapse7">
@@ -143,6 +172,8 @@ aria-multiselectable="true">
                   </div>
                 
                   <!-- Card body -->
+                  <!--
+
                   <div id="collapse7" class="collapse show" role="tabpanel" aria-labelledby="heading7" data-parent="#accordionEx2">
                     <div class="card-body pt-0">
                       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
@@ -159,9 +190,13 @@ aria-multiselectable="true">
                 <!-- Accordion card -->
                 
                 <!-- Accordion card -->
+                <!--
+
                 <div class="card">
                 
                   <!-- Card header -->
+                  <!--
+
                   <div class="card-header" role="tab" id="heading8">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse8" aria-expanded="false"
                       aria-controls="collapse8">
@@ -172,6 +207,8 @@ aria-multiselectable="true">
                   </div>
                 
                   <!-- Card body -->
+                  <!--
+
                   <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading8" data-parent="#accordionEx2">
                     <div class="card-body pt-0">
                       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
@@ -188,9 +225,13 @@ aria-multiselectable="true">
                 <!-- Accordion card -->
                 
                 <!-- Accordion card -->
+                <!--
+
                 <div class="card">
                 
                   <!-- Card header -->
+                  <!--
+
                   <div class="card-header" role="tab" id="heading9">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapse9" aria-expanded="false"
                       aria-controls="collapse9">
@@ -201,6 +242,8 @@ aria-multiselectable="true">
                   </div>
                 
                   <!-- Card body -->
+                  <!--
+
                   <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9" data-parent="#accordionEx2">
                     <div class="card-body pt-0">
                       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
@@ -215,8 +258,12 @@ aria-multiselectable="true">
                   </div>
                 </div>
                 <!-- Accordion card -->
+                <!--
+
                 </div>
                 <!--/.Accordion wrapper-->
+                <!--
+
             </div>
         {{-- THIRD CARD --}}
         <div class="col-md-4">
@@ -235,9 +282,13 @@ aria-multiselectable="true">
                 <hr class="mb-0">
                 
                 <!-- Accordion card -->
+                <!--
+
                 <div class="card">
                 
                   <!-- Card header -->
+                  <!--
+
                   <div class="card-header" role="tab" id="heading10">
                     <a data-toggle="collapse" data-parent="#accordionEx3" href="#collapse10" aria-expanded="true"
                       aria-controls="collapse10">
@@ -248,6 +299,8 @@ aria-multiselectable="true">
                   </div>
                 
                   <!-- Card body -->
+                  <!--
+
                   <div id="collapse10" class="collapse show" role="tabpanel" aria-labelledby="heading10" data-parent="#accordionEx3">
                     <div class="card-body pt-0">
                         <div class="row my-4">
@@ -271,9 +324,13 @@ aria-multiselectable="true">
                 <!-- Accordion card -->
                 
                 <!-- Accordion card -->
+                <!--
+
                 <div class="card">
                 
                   <!-- Card header -->
+                  <!--
+
                   <div class="card-header" role="tab" id="heading11">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse11" aria-expanded="false"
                       aria-controls="collapse11">
@@ -284,6 +341,8 @@ aria-multiselectable="true">
                   </div>
                 
                   <!-- Card body -->
+                  <!--
+
                   <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11" data-parent="#accordionEx3">
                     <div class="card-body pt-0">
                       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
@@ -300,9 +359,13 @@ aria-multiselectable="true">
                 <!-- Accordion card -->
                 
                 <!-- Accordion card -->
+                <!--
+
                 <div class="card">
                 
                   <!-- Card header -->
+                  <!--
+
                   <div class="card-header" role="tab" id="heading12">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3" href="#collapse12" aria-expanded="false"
                       aria-controls="collapse12">
@@ -313,6 +376,8 @@ aria-multiselectable="true">
                   </div>
                 
                   <!-- Card body -->
+                  <!--
+
                   <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12" data-parent="#accordionEx3">
                     <div class="card-body pt-0">
                       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
@@ -327,10 +392,14 @@ aria-multiselectable="true">
                   </div>
                 </div>
                 <!-- Accordion card -->
+                <!--
+
                 </div>
                 <!--/.Accordion wrapper-->
+                <!--
+
             </div>
         </div>
-    </div>
+    </div>-->
 </div>
 @endsection

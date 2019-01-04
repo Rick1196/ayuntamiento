@@ -25,7 +25,7 @@
                         <a class="nav-link" href="/prensa">PRENSA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">DEPENDENCIAS</a>
+                        <a class="nav-link" href="{{ route('app.dependencias') }}">DEPENDENCIAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{route('tramites.servicios')}}">TRÁMITES Y SERVICIOS</a>

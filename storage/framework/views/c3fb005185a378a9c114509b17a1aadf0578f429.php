@@ -16,7 +16,7 @@
           <a class="nav-link" href="/prensa">PRENSA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">DEPENDENCIAS</a>
+          <a class="nav-link" href="<?php echo e(route('app.dependencias')); ?>">DEPENDENCIAS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo e(route('tramites.servicios')); ?>">TRÁMITES Y SERVICIOS</a>
