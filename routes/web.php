@@ -17,10 +17,10 @@ Route::view('/cabildo','app.cabildo');
 Route::view('/prensa','app.prensa');
 Route::view('/contacto','app.contacto');
 Route::view('/toluca','app.toluca');
+Route::view('/transparencia','app.transparencia')->name('app.transparencia');
 Route::view('/tramites-servicios','app.tramites')->name('tramites.servicios');
 Route::view('/gestion-municipal','app.gestiones')->name('gestion.municipal');
 Route::view('/login','auth.login');
-
 
 Auth::routes();
 
@@ -34,4 +34,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/posts', 'PostsController@index')->name('posts');
     Route::get('/admin-posts', 'PostsController@admin')->name('admin.posts');
     Route::get('/administracion', 'UsersController@admin')->name('administracion');
+    Route::get('file','FileController@create');
+    Route::post('file','FileController@store');
 });

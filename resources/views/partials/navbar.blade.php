@@ -25,7 +25,7 @@
           <a class="nav-link" href="/toluca">NUESTRO MUNICIPIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">TRANSPARENCIA</a>
+          <a class="nav-link" href="{{ route('app.transparencia') }}">TRANSPARENCIA</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/contacto">CONTACTO</a>

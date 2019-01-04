@@ -28,13 +28,13 @@
                         <a class="nav-link" href="#">DEPENDENCIAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">TRÁMITES Y SERVICIOS</a>
+                        <a class="nav-link" href="<?php echo e(route('tramites.servicios')); ?>">TRÁMITES Y SERVICIOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/toluca">NUESTRO MUNICIPIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">TRANSPARENCIA</a>
+                        <a class="nav-link" href="<?php echo e(route('app.transparencia')); ?>">TRANSPARENCIA</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contacto">CONTACTO</a>
