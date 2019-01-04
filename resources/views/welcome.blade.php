@@ -9,7 +9,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" id="uno" src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/201000/201880-Toluca-Cathedral.jpg" alt="First slide">
+            <img class="first-slide" id="uno" src="{{asset('img/logo.jpg')}}" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>

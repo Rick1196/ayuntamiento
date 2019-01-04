@@ -1,5 +1,5 @@
 const mix = require('laravel-mix');
-
+var Editor = require('@tinymce/tinymce-vue');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
