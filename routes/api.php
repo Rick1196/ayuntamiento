@@ -27,3 +27,10 @@ Route::put('/act-post', 'PostsController@activar')->name('act-post');
 Route::get('/secciones', 'PostsController@getSecciones')->name('secciones');
 
 Route::delete('/deletePost/{id}', 'PostsController@delete')->name('deletePost');
+
+
+//usuarios
+Route::get('/users', 'UsersController@obtenerUsuarios');
+Route::delete('/dropUser/{id}', 'UsersController@bajaUsuario');
+Route::get('/obtenerRoles', 'UsersController@ObtenerRoles');
+Route::put('/putUser', 'UsersController@putUser');

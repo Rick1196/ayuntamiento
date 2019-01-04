@@ -5,7 +5,7 @@
                 <div class="form-group col-md-4">
                 <label for="inputState">Filtrar por</label>
                 <select id="inputState" v-model="filtro" class="form-control">
-                    <option value="todos" v-on:click="filtrar(0,0)">Mostrar todos</option>
+                    <option value="todos":value="'todos'">Mostrar todos</option>
                     <option v-for="seccion in secciones"  :value="seccion.nombre" :key="seccion.id">{{seccion.descripcion}}</option>
                 </select>
                 </div>
@@ -56,10 +56,10 @@ export default {
         getPaginados(modo){
             var url = `api/get-posts/${this.filtro}`;
             if(modo == 1){
-                url = url + this.prev;
+                url = this.prev;
             }
             else if (modo == 2) {
-                url = url + this.next
+                url = this.next;
             }
             axios.get(url).then(response => {
                 this.posts = response.data.data;

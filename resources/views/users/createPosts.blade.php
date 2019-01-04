@@ -19,8 +19,8 @@
         <form action="{{ route('publicacion.up') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
-                <label for="seccion">Seccion</label>
-                <select name="seccion" id="seccion">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Seccion</label>
+                <select class="custom-select my-1 mr-sm-2"name="seccion" id="seccion">
                     @foreach($sec as $seccion)
                     <option value="{{$seccion->id}}">{{$seccion->descripcion}}</option>
                     @endforeach
@@ -59,7 +59,8 @@
 
             <div class="form-group">
                 <label for="link">Link</label>
-                <textarea class="form-control" id="link" name="link" rows="5"></textarea>
+                <input class="form-control" id="link" name="link" placeholder="https://www.youtube.com/embed/hQgvt-s-AHQ">
+                <small id="linkHelp" class="form-text text-muted">Si desea insertar un link de youtube y no sabe como, visite:<a href="https://support.google.com/youtube/answer/171780?hl=es-419">Ayuda youtube</a></small>
                 @if ($errors->has('link'))
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $errors->first('link') }}</strong>

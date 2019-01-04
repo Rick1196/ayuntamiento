@@ -144,34 +144,28 @@
         <small class="text-redm">Enterate de lo más relevante de nuestro municipio</small>
         </h3><br><br>
 
-        <div class="card-deck">
-  <div class="card">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    
-  </div>
-  <div class="card">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    
-  </div>
-  <div class="card">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    
+  @foreach($videos as $conjunto)
+      <div class="card-deck">
+          @foreach($conjunto as $video)
+            <div class="card">
+              <iframe class="embed-responsive-item" src="{{$video->link}}" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">{{$video->titulo}}</h5>
+                <p class="card-text">{{$video->subtitulo}}</p>
+                <p class="card-text">{{$video->contenido}}</p>
+                <a class="btn btn-primary" href="{{$video->link}}">Ver</a>
+              </div>
+            </div>
+          @endforeach
+      </div><br><br>
+  @endforeach    
   </div>
 </div>
 </div>
 </div>
+
+
+
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">

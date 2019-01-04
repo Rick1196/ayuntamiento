@@ -138,34 +138,28 @@
         <small class="text-redm">Enterate de lo más relevante de nuestro municipio</small>
         </h3><br><br>
 
-        <div class="card-deck">
-  <div class="card">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    
-  </div>
-  <div class="card">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    
-  </div>
-  <div class="card">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    
+  <?php $__currentLoopData = $videos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $conjunto): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+      <div class="card-deck">
+          <?php $__currentLoopData = $conjunto; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $video): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <div class="card">
+              <iframe class="embed-responsive-item" src="<?php echo e($video->link); ?>" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title"><?php echo e($video->titulo); ?></h5>
+                <p class="card-text"><?php echo e($video->subtitulo); ?></p>
+                <p class="card-text"><?php echo e($video->contenido); ?></p>
+                <a class="btn btn-primary" href="<?php echo e($video->link); ?>">Ver</a>
+              </div>
+            </div>
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+      </div><br><br>
+  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>    
   </div>
 </div>
 </div>
 </div>
+
+
+
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -187,4 +181,5 @@
 </div>
     
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layout.app', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

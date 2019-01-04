@@ -22,6 +22,8 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('admin-posts', require('./components/AdminPosts.vue'));
+Vue.component('admin-com', require('./components/AdministracionComponent.vue'));
+
 
 
 /**

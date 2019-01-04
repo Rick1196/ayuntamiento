@@ -19,7 +19,7 @@
           <a class="nav-link" href="#">DEPENDENCIAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">TRÁMITES Y SERVICIOS</a>
+          <a class="nav-link" href="<?php echo e(route('tramites.servicios')); ?>">TRÁMITES Y SERVICIOS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/toluca">NUESTRO MUNICIPIO</a>
@@ -41,6 +41,11 @@
                   <a class="dropdown-item" href="<?php echo e(route('admin.posts')); ?>">
                       Administrar publicaciones
                   </a>
+                  <?php if(Auth::user()->hasRole('admin')): ?>
+                      <a class="dropdown-item" href="<?php echo e(route('administracion')); ?>">
+                          Administrar usuario
+                      </a>
+                  <?php endif; ?>
                   <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
                       onclick="event.preventDefault();
                                       document.getElementById('logout-form').submit();">

@@ -48,6 +48,11 @@
                             <a class="dropdown-item" href="<?php echo e(route('admin.posts')); ?>">
                                 Administrar publicaciones
                             </a>
+                            <?php if(Auth::user()->hasRole('admin')): ?>
+                                <a class="dropdown-item" href="<?php echo e(route('administracion')); ?>">
+                                    Administrar usuarios
+                                </a>
+                            <?php endif; ?>
                             <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
                                 onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">

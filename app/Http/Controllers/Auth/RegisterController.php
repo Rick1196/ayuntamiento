@@ -5,10 +5,13 @@ namespace App\Http\Controllers\Auth;
 use App\User;
 use App\Role;
 use DB;
+use View;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Auth\Events\Registered;
 
 class RegisterController extends Controller
 {
@@ -39,7 +42,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        //$this->middleware('guest');
     }
 
     /**
@@ -58,11 +61,25 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        //$this->guard()->login($user);
+        //return View::make("fill_data", compact('user'));
+        //return $this->registered($request, $user)
+                       // ?: redirect($this->redirectPath());
+        $mensaje = 'Usuario '.$user->email.' registrado exitosamente';
+        return View::make("users/adminUsers",compact('mensaje'));
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return \App\User 
      */
     protected function create(array $data)
     {
@@ -75,7 +92,6 @@ class RegisterController extends Controller
         $user
             ->roles()
             ->attach($data['rol_selected']);
-
         return $user;
     }
 

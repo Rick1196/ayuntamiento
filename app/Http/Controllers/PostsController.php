@@ -20,20 +20,40 @@ class PostsController extends Controller{
             return Post::with('image')->orderBy('created_at', 'desc')->paginate(5);
         }
         elseif($filtro == 'carousel'){
-            return Post::with('image')->where('seccion_id',1)->orderBy('created_at', 'desc')->paginate(5);
+            $seccion = Secciones::where('nombre',$filtro)->first();
+            return Post::with('image')->where('seccion_id',$seccion->id)->orderBy('created_at', 'desc')->paginate(5);
         }
         elseif($filtro == 'convocatorias'){
-            return Post::with('image')->where('seccion_id',2)->orderBy('created_at', 'desc')->paginate(5);
+            $seccion = Secciones::where('nombre',$filtro)->first();
+            return Post::with('image')->where('seccion_id',$seccion->id)->orderBy('created_at', 'desc')->paginate(5);
         }
         elseif($filtro == 'tv'){
-            return Post::with('image')->where('seccion_id',3)->orderBy('created_at', 'desc')->paginate(5);
+            $seccion = Secciones::where('nombre',$filtro)->first();
+            return Post::with('image')->where('seccion_id',$seccion->id)->orderBy('created_at', 'desc')->paginate(5);
         }
     }
 
 
     public function inicio(){
-        $banner = Post::with('image')->where('seccion_id',1)->where('activado',true)->orderBy('created_at', 'desc')->get();
-        return View::make("welcome", compact('banner'));
+        $seccion = Secciones::where('nombre','carousel')->first();
+        $banner = Post::with('image')->where('seccion_id',$seccion->id)->where('activado',true)->orderBy('created_at', 'desc')->get();
+        $seccion = Secciones::where('nombre','tv')->first();
+        $tv = Post::with('image')->where('seccion_id',$seccion->id)->where('activado',true)->orderBy('created_at', 'desc')->get();
+        $videos = array();
+        $temp = array();
+        $cont = 1;
+        foreach ($tv as $evento) {
+            if($cont % 3 == 0){
+                array_push($temp, $evento);
+                array_push($videos, $temp);
+                $temp = array();
+            }else{
+                array_push($temp, $evento);
+            }
+            $cont = $cont + 1; 
+        }
+        array_push($videos, $temp);
+        return View::make("welcome", compact('banner','videos'));
     }
 
     public function activar(Request $data){

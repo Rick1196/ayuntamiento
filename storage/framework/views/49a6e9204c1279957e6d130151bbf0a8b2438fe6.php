@@ -18,8 +18,8 @@
         <form action="<?php echo e(route('publicacion.up')); ?>" method="POST" enctype="multipart/form-data">
             <?php echo csrf_field(); ?>
             <div class="form-group">
-                <label for="seccion">Seccion</label>
-                <select name="seccion" id="seccion">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Seccion</label>
+                <select class="custom-select my-1 mr-sm-2"name="seccion" id="seccion">
                     <?php $__currentLoopData = $sec; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $seccion): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <option value="<?php echo e($seccion->id); ?>"><?php echo e($seccion->descripcion); ?></option>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -58,7 +58,8 @@
 
             <div class="form-group">
                 <label for="link">Link</label>
-                <textarea class="form-control" id="link" name="link" rows="5"></textarea>
+                <input class="form-control" id="link" name="link" placeholder="https://www.youtube.com/embed/hQgvt-s-AHQ">
+                <small id="linkHelp" class="form-text text-muted">Si desea insertar un link de youtube y no sabe como, visite:<a href="https://support.google.com/youtube/answer/171780?hl=es-419">Ayuda youtube</a></small>
                 <?php if($errors->has('link')): ?>
                     <span class="invalid-feedback" role="alert">
                         <strong><?php echo e($errors->first('link')); ?></strong>
