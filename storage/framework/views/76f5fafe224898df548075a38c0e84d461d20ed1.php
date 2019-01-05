@@ -1,5 +1,5 @@
 <?php $__env->startSection('content'); ?>
-<div style="max-width: 100%; ">
+<div >
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -8,7 +8,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide img-fluid" id="uno" src="<?php echo e(asset('img/logo.jpg')); ?>" alt="First slide">
+            <img style="max-width:100%" class="first-slide img-responsive img-fluid" src="<?php echo e(asset('img/logo.jpg')); ?>" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
@@ -19,7 +19,7 @@
           </div>
           <?php $__currentLoopData = $banner; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $im): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="carousel-item">
-              <img class="second-slide" src="<?php echo e(asset('images/'.$im->image->name)); ?>" alt="Second slide">
+              <img class="img-fluid" src="<?php echo e(asset('images/'.$im->image->name)); ?>" alt="Second slide">
               <div class="container">
                 <div class="carousel-caption text-right">
                   <h1 class=" bg-dark text-white"><?php echo e($im->titulo); ?>.</h1>
@@ -57,20 +57,21 @@
         <small class="text-muted">TEMAS DE INTERÉS</small>
         </h3><br><br>
       </div>
-      
-      <div class="row">
-        <div class="col-sm-12 col-md-6" id="unoslide">
-          <img src="<?php echo e(asset('img/beca1.jpg')); ?>" class="img-flui t">
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="row">
-            <div class="col-md-6 col-sm-12" >
-              <img src="<?php echo e(asset('img/beca2.jpg')); ?>" class="img-fluid" id="dosslid" >
-            </div>
+      <div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6" id="unoslide" >
+            <img src="<?php echo e(asset('img/beca1.jpg')); ?>" class="img-flui t img-responsive">
           </div>
-          <div class="row">
-            <div class="col-md-6" >
-              <img src="<?php echo e(asset('img/beca3.jpg')); ?>" class="img-fluid" id="tresslid">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-md-6 col-sm-12" >
+                <img src="<?php echo e(asset('img/beca2.jpg')); ?>" class="img-fluid img-responsive" id="dosslid" >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6" >
+                <img src="<?php echo e(asset('img/beca3.jpg')); ?>" class="img-fluid img-responsive" id="tresslid">
+              </div>
             </div>
           </div>
         </div>
