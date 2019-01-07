@@ -65,4 +65,10 @@ class ImageUploadController extends Controller
         return Image::all();
     }
 
+    /**
+     * 
+     */
+
+   
+
 }

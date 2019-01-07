@@ -41,6 +41,9 @@
                   <a class="dropdown-item" href="{{ route('admin.posts') }}">
                       Administrar publicaciones
                   </a>
+                  <a class="dropdown-item" href="{{ route('admin.noticias') }}">
+                      Administrar prensa
+                  </a>
                   @if(Auth::user()->hasRole('admin'))
                       <a class="dropdown-item" href="{{ route('administracion') }}">
                           Administrar usuario

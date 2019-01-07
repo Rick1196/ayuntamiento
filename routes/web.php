@@ -14,7 +14,7 @@
 Route::get('/','PostsController@inicio')->name('welcome');
 
 Route::view('/cabildo','app.cabildo');
-Route::view('/prensa','app.prensa');
+Route::get('/prensa','NoticiasController@index')->name('app.prensa');
 Route::view('/contacto','app.contacto');
 Route::view('/toluca','app.toluca');
 Route::view('/transparencia','app.transparencia')->name('app.transparencia');
@@ -38,4 +38,5 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/administracion', 'UsersController@admin')->name('administracion');
     Route::get('file','FileController@create');
     Route::post('file','FileController@store');
+    Route::view('/admNoticias','.users.admNoticias')->name('admin.noticias');
 });

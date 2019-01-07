@@ -25,7 +25,7 @@
                         <a class="nav-link" href="/prensa">PRENSA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">DEPENDENCIAS</a>
+                        <a class="nav-link" href="<?php echo e(route('app.dependencias')); ?>">DEPENDENCIAS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo e(route('tramites.servicios')); ?>">TRÁMITES Y SERVICIOS</a>
@@ -47,6 +47,9 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="<?php echo e(route('admin.posts')); ?>">
                                 Administrar publicaciones
+                            </a>
+                            <a class="dropdown-item" href="<?php echo e(route('admin.noticias')); ?>">
+                                Administrar noticas
                             </a>
                             <?php if(Auth::user()->hasRole('admin')): ?>
                                 <a class="dropdown-item" href="<?php echo e(route('administracion')); ?>">

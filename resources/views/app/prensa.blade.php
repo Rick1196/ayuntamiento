@@ -3,11 +3,6 @@
 @include('partials.title-head',['title' => 'COMUNICADOS DE PRENSA','subtitle'=>'NOTICIAS RELEVANTES'])
 <div class="container">
 <div class="container">
-<center>
-    <img class="img-fluid" src="{{asset('img/construccion.jpg')}}" alt="">
-    </center>
-</div>
-<!--
   <div class="row" style="border-bottom:3px solid red;">
     <div class="col-md-4">
         <div class="alert alert-danger" role="alert">
@@ -19,72 +14,23 @@
     </div>
   </div>
 </div><br>
-          <div class="container">
-          <div class="card-columns">
+<div class="container">
+    <div class="card-columns">
+      @foreach($ultimas as $nota)
         <div class="card">
-          <img class="card-img-top" src="https://edomex.quadratin.com.mx/www/wp-content/uploads/2017/11/ASESINATO-TOLUCA-1-NOV-2017-2-770x392.jpg" alt="Card image cap">
+          @if($nota->image)
+            <img class="card-img-top" src="{{asset('images/'.$nota->image->name)}}" alt="Card image cap">
+          @else
+            <img class="card-img-top" src="{{asset('img/1.png')}}" alt="Card image cap">
+            @endif
           <div class="card-body">
-            <h5 class="card-title">Card title that wraps to a new line</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="text-center"><h2 class="card-title">{{$nota->titulo}}</h2></p>
+            <h4 class="card-text">{{$nota->subtitulo}}</h4>
+            <button data-toggle="modal" onclick="fillModal({{$nota}})" data-target="#exampleModal" class="btn btn-primary">Leer</button>
           </div>
-        </div>
-        <div class="card p-3">
-          <blockquote class="blockquote mb-0 card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="https://3.bp.blogspot.com/-lnhPY47SgGo/Vq232xMz_yI/AAAAAAAA1N4/la4w4-M9dR8/s640/Avenida-Torres-Metepec-Noticias-Toluca.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card bg-primary text-white text-center p-3">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-            <footer class="blockquote-footer">
-              <small>
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img" src="https://aristeguinoticias.com/wp-content/uploads/2018/09/accidente1e-600x274.jpg" alt="Card image">
-        </div>
-        <div class="card p-3 text-right">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
       </div>
-    </div><br><br>
+    @endforeach
+</div><br><br>
 
 <div class="container" style="border-bottom:3px solid red;">
   <div class="row">
@@ -101,68 +47,53 @@
 
 <div class="container">
     <div class="card-columns">
-  <div class="card">
-    <img class="card-img-top" src="https://edomex.quadratin.com.mx/www/wp-content/uploads/2017/11/ASESINATO-TOLUCA-1-NOV-2017-2-770x392.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title that wraps to a new line</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      @foreach($relevantes as $nota)
+        <div class="card">
+          @if($nota->image)
+            <img class="card-img-top" src="{{asset('images/'.$nota->image->name)}}" alt="Card image cap">
+          @else
+            <img class="card-img-top" src="{{asset('img/1.png')}}" alt="Card image cap">
+            @endif
+          <div class="card-body">
+            <p class="text-center"><h2 class="card-title">{{$nota->titulo}}</h2></p>
+            <h4 class="card-text">{{$nota->subtitulo}}</h4>
+            <button data-toggle="modal"  data-target="#exampleModal" class="btn btn-primary" onclick="fillModal({{$nota}})" >Leer</button>
+          </div>
+      </div>
+    @endforeach
+</div><br><br>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="tit"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <h6 id="sub"></h6>
+          </div><br><br>
+          <img class="img-fluid" id="img" style="max-width:100%"><br><br>
+          <div id="contenido">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Terminar de leer</button>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="card p-3">
-    <blockquote class="blockquote mb-0 card-body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="https://3.bp.blogspot.com/-lnhPY47SgGo/Vq232xMz_yI/AAAAAAAA1N4/la4w4-M9dR8/s640/Avenida-Torres-Metepec-Noticias-Toluca.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card bg-primary text-white text-center p-3">
-    <blockquote class="blockquote mb-0">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-      <footer class="blockquote-footer">
-        <small>
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img" src="https://aristeguinoticias.com/wp-content/uploads/2018/09/accidente1e-600x274.jpg" alt="Card image">
-  </div>
-  <div class="card p-3 text-right">
-    <blockquote class="blockquote mb-0">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>-->
-</div>
 @endsection
+<script>
+  function fillModal(content){
+    document.getElementById("contenido").innerHTML = content.contenido;
+    document.getElementById("sub").innerHTML = content.subtitulo;
+    document.getElementById("tit").innerHTML = content.titulo;
+    img = document.getElementById('img')
+    img.src = "/images/"+content.image.name;
+
+  }
+</script>

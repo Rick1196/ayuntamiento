@@ -34,3 +34,10 @@ Route::get('/users', 'UsersController@obtenerUsuarios');
 Route::delete('/dropUser/{id}', 'UsersController@bajaUsuario');
 Route::get('/obtenerRoles', 'UsersController@ObtenerRoles');
 Route::put('/putUser', 'UsersController@putUser');
+
+//noticas
+Route::post('/postNoticia', 'NoticiasController@postNoticia');
+Route::put('/putNoticia', 'NoticiasController@putNoticia');
+Route::get('/get-noticias/{filtro}', 'NoticiasController@getNoticias')->name('get.noticias');
+Route::delete('/deleteNoticias/{id}', 'NoticiasController@deleteNoticia');
+

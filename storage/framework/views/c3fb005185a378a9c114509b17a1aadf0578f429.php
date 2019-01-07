@@ -41,6 +41,9 @@
                   <a class="dropdown-item" href="<?php echo e(route('admin.posts')); ?>">
                       Administrar publicaciones
                   </a>
+                  <a class="dropdown-item" href="<?php echo e(route('admin.noticias')); ?>">
+                      Administrar prensa
+                  </a>
                   <?php if(Auth::user()->hasRole('admin')): ?>
                       <a class="dropdown-item" href="<?php echo e(route('administracion')); ?>">
                           Administrar usuario
