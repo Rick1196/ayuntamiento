@@ -18,6 +18,9 @@ Route::get('/prensa','NoticiasController@index')->name('app.prensa');
 Route::view('/contacto','app.contacto')->name('app.contacto');
 Route::view('/toluca','app.toluca');
 Route::view('/transparencia','app.transparencia')->name('app.transparencia');
+Route::view('/transparencia_docs_publicos','app.docs_publicos')->name('app.docs_publicos');
+Route::view('/transparencia_licitaciones','app.licitaciones')->name('app.licitaciones');
+
 Route::view('/dependencias','app.dependencias')->name('app.dependencias');
 
 Route::view('/tramites-servicios','app.tramites')->name('tramites.servicios');

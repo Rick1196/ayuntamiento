@@ -48,13 +48,13 @@
                   <a class="dropdown-item" href="<?php echo e(route('app.transparencia')); ?>">
                     IPOMEX
                   </a>
-                  <a class="dropdown-item" href="">
+                  <a class="dropdown-item" href="<?php echo e(route('app.docs_publicos')); ?>">
                      DOCUMENTOS PUBLICOS
                   </a>
                   <a class="dropdown-item" href="">
                       TRANSPARENCIA ACTIVA
                   </a>
-                  <a class="dropdown-item" href="">
+                  <a class="dropdown-item" href="<?php echo e(route('app.licitaciones')); ?>">
                       LICITACIONES
                   </a>
           </div>

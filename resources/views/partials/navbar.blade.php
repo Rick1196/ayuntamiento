@@ -48,13 +48,13 @@
                   <a class="dropdown-item" href="{{ route('app.transparencia') }}">
                     IPOMEX
                   </a>
-                  <a class="dropdown-item" href="">
+                  <a class="dropdown-item" href="{{ route('app.docs_publicos') }}">
                      DOCUMENTOS PUBLICOS
                   </a>
                   <a class="dropdown-item" href="">
                       TRANSPARENCIA ACTIVA
                   </a>
-                  <a class="dropdown-item" href="">
+                  <a class="dropdown-item" href="{{ route('app.licitaciones') }}">
                       LICITACIONES
                   </a>
           </div>

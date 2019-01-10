@@ -12,7 +12,7 @@
                         <div class="card card-cascade wider">
                                 <!-- Card image -->
                                 <div class="view view-cascade overlay">
-                                  <img  class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Juanro.jpg/220px-Juanro.jpg" alt="Card image cap">
+                                  <img  class="card-img-top" src="<?php echo e(asset('img/presidente.jpg')); ?>" alt="Card image cap">
                                   <a href="#!">
                                     <div class="mask rgba-white-slight"></div>
                                   </a>
