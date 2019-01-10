@@ -18,4 +18,10 @@ class Image extends Model
             ->belongsToMany('App\Noticia')
             ->withTimestamps();
     }
+    public function personas()
+    {
+        return $this
+            ->belongsToMany('App\Persona')
+            ->withTimestamps();
+    }
 }

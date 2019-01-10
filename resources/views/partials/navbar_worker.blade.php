@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #641c34;">
         <a class="navbar-brand" href="/">TOLUCA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,6 +50,9 @@
                             </a>
                             <a class="dropdown-item" href="{{ route('admin.noticias') }}">
                                 Administrar noticas
+                            </a>
+                            <a class="dropdown-item" href="{{ route('admin.cabildo') }}">
+                                Administrar cabildo
                             </a>
                             @if(Auth::user()->hasRole('admin'))
                                 <a class="dropdown-item" href="{{ route('administracion') }}">

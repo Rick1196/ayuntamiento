@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class PersonasTable extends Migration
+class AddLinksToPersons extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class PersonasTable extends Migration
      */
     public function up()
     {
-        Schema::create('personas', function (Blueprint $table) {
-            $table->increments('id'); 
-            $table->string('nombre'); 
-            $table->string('apellido');
-            $table->timestamps(); 
+        Schema::table('personas', function (Blueprint $table) {
+            $table->string('facebook');
+            $table->string('twitter');
         });
-        
     }
 
     /**
@@ -29,6 +26,9 @@ class PersonasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('personas'); 
+        Schema::table('personas', function (Blueprint $table) {
+            $table->dropColumn('facebook');
+            $table->dropColumn('twitter');
+        });
     }
 }

@@ -41,3 +41,8 @@ Route::put('/putNoticia', 'NoticiasController@putNoticia');
 Route::get('/get-noticias/{filtro}', 'NoticiasController@getNoticias')->name('get.noticias');
 Route::delete('/deleteNoticias/{id}', 'NoticiasController@deleteNoticia');
 
+//personas
+Route::get('/get-personas/{filtro}', 'PersonasController@getPersonas')->name('get.personas');
+Route::post('/postPersona', 'PersonasController@postPersona')->name('post.personas');
+
+

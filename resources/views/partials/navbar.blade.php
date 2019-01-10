@@ -1,6 +1,8 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">TOLUCA</a>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #641c34;">
+      <a class="navbar-brand" href="#">
+        <img src="{{asset('img/icon.png')}}" width="90" height="90" alt="TOLUCA">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,6 +45,9 @@
                   </a>
                   <a class="dropdown-item" href="{{ route('admin.noticias') }}">
                       Administrar prensa
+                  </a>
+                  <a class="dropdown-item" href="{{ route('admin.cabildo') }}">
+                      Administrar cabildo
                   </a>
                   @if(Auth::user()->hasRole('admin'))
                       <a class="dropdown-item" href="{{ route('administracion') }}">

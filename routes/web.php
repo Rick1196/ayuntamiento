@@ -39,4 +39,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('file','FileController@create');
     Route::post('file','FileController@store');
     Route::view('/admNoticias','.users.admNoticias')->name('admin.noticias');
+    Route::view('/admCabildo','.users.admCabildo')->name('admin.cabildo');
+
 });

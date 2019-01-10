@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class PuestosTable extends Migration
+class AddImageToPersons extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class PuestosTable extends Migration
      */
     public function up()
     {
-        Schema::create('puestos', function (Blueprint $table) {
-            $table->increments('id'); 
-            $table->string('nombre'); 
-            $table->string('descripcion');
-            $table->timestamps(); 
+        Schema::table('personas', function (Blueprint $table) {
+            $table->integer('image_id')->nullable()->unsigned();
+            $table->foreign('image_id')->references('id')->on('images');
         });
     }
 
@@ -28,7 +26,8 @@ class PuestosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('puestos'); 
+        Schema::table('personas', function (Blueprint $table) {
+            $table->dropColumn('image_id');
+        });
     }
 }
- 
