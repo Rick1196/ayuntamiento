@@ -8,7 +8,6 @@
          <!-- Card Wider -->
          <div class="container">
             <div class="row justify-content-md-center">
-                
                 <div class="col-md-4 offset-md-4">
                         <div class="card card-cascade wider">
                                 <!-- Card image -->
@@ -29,20 +28,58 @@
                                   <!-- Text -->
                                   <p class="card-text">Ejerce la docencia de manera ininterrumpida en diversas universidades e instituciones de educación superior desde hace veinte años y ha sido socio fundador y miembro de diversas organizaciones de asistencia privada, académicas, empresariales y religiosas.  </p>
 
-                                  <!-- Linkedin 
-                                  <a class="px-2 fa-lg li-ic"><i class="fa fa-linkedin"></i></a>
-                                  Twitter 
-                                  <a class="px-2 fa-lg tw-ic"><i class="fa fa-twitter"></i></a>
-                                  Dribbble 
-                                  <a class="px-2 fa-lg fb-ic"><i class="fa fa-facebook"></i></a>
-                                -->
+                                  <a class="px-2 fa-lg tw-ic" href="https://twitter.com/juanrodolfo_sg?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                                  <a class="px-2 fa-lg tw-ic" href="https://www.facebook.com/H.AyuntamientoDeToluca/" target="_blank"><i class="fab fa-facebook"></i></a>
                                 </div>
                               
-                              </div>
-                              <!-- Card Wider -->
+                        </div>
+                        <!-- Card Wider -->
                 </div>
                 <div class="col-md-4"></div>
             </div><br>
+            <div class="container">
+                <?php $__currentLoopData = $cabildo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $conjunto): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <div class="row">
+                    <?php $__currentLoopData = $conjunto; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $persona): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                      <div class="col-md-4">
+                        <div class="card card-cascade wider">
+                            <!-- Card image -->
+                            <div class="view view-cascade overlay">
+                              <?php if($persona->image_id): ?>
+                               <img  class="card-img-top" src="<?php echo e(asset('images/'.$persona->image->name)); ?>" alt="Card image cap">
+                              <?php else: ?>
+                              <img  class="card-img-top" src="<?php echo e(asset('img/user.jpg')); ?>" alt="Card image cap">
+                              <?php endif; ?>
+                              <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                          
+                            <!-- Card content -->
+                            <div class="card-body card-body-cascade text-center">
+                          
+                              <!-- Title -->
+                              <h4 class="card-title"><strong><?php echo e($persona->nombre.' '); ?><?php echo e($persona->apellidos); ?></strong></h4>
+                              <!-- Subtitle -->
+                              <h5 class="blue-text pb-2"><strong><?php echo e($persona->desc_puesto); ?></strong></h5>
+                              <!-- Text -->
+                              <p class="card-text"><?php echo e($persona->descripcion); ?> </p>
+
+                              <?php if($persona->twitter): ?>
+                              <a class="px-2 fa-lg tw-ic" href="<?php echo e($persona->twitter); ?>" target="_blank"><i class="fab fa-twitter"></i></a>
+                              <?php endif; ?>
+                              <?php if($persona->facebook): ?>
+                              <a class="px-2 fa-lg fb-ic" href="<?php echo e($persona->facebook); ?>" target="_blank"><i class="fab fa-facebook"></i></a>
+                              <?php endif; ?>
+                            
+                            </div>
+                          
+                        </div>
+                      </div>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                </div><br><br>
+              <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>    
+            </div>
             
 
       

@@ -13,9 +13,9 @@
 
 Route::get('/','PostsController@inicio')->name('welcome');
 
-Route::view('/cabildo','app.cabildo');
+Route::get('/cabildo','PersonasController@index')->name('app.cabildo');
 Route::get('/prensa','NoticiasController@index')->name('app.prensa');
-Route::view('/contacto','app.contacto');
+Route::view('/contacto','app.contacto')->name('app.contacto');
 Route::view('/toluca','app.toluca');
 Route::view('/transparencia','app.transparencia')->name('app.transparencia');
 Route::view('/dependencias','app.dependencias')->name('app.dependencias');

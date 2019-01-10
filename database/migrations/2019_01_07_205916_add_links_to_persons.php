@@ -14,8 +14,8 @@ class AddLinksToPersons extends Migration
     public function up()
     {
         Schema::table('personas', function (Blueprint $table) {
-            $table->string('facebook');
-            $table->string('twitter');
+            $table->string('facebook')->nullable();
+            $table->string('twitter')->nullable();
         });
     }
 

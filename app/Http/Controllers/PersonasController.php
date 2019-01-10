@@ -7,23 +7,43 @@ use App\Persona;
 use App\Image;
 use Validator;
 use DB;
+use View;
 class PersonasController extends Controller
-{
+{   
+
+    public function index(){
+        $personas = Persona::with('image')->orderBy('created_at')->get();
+        $cabildo = array();
+        $temp = array();
+        $cont = 1;
+        foreach ($personas as $persona) {
+            if($cont % 3 == 0){
+                array_push($temp, $persona);
+                array_push($cabildo, $temp);
+                $temp = array();
+            }else{
+                array_push($temp, $persona);
+            }
+            $cont = $cont + 1; 
+        }
+        array_push($cabildo, $temp);
+        return View::make("app.cabildo", compact('cabildo'));
+    }
     public function getPersonas(Request $data){
         
         $filtro = $data['filtro'];
         if($filtro == 'todos'){
-            return Persona::with('image')->orderBy('nombre')->paginate(10);
+            return Persona::with('image')->orderBy('apellidos')->paginate(10);
         }
         else{
-            return Persona::with('image')->where('nombre',$filtro)->orderBy('nombre')->paginate(10);
+            return Persona::with('image')->where('nombre',$filtro)->orderBy('apellidos')->paginate(10);
         }
     }
 
     public function postPersona(Request $data){
         $validator = $data->validate([
             'nombre' => 'required',
-            'apellido' => 'required',
+            'apellidos' => 'required',
             'descripcion' => 'required',
             'desc_puesto' => 'required'
         ]);
@@ -41,19 +61,19 @@ class PersonasController extends Controller
             $nueva->name = $name;
             $nueva->original_name = '';
             $nueva->save();  
-            $noticia->image()->associate($nueva);
+            $persona->image()->associate($nueva);
         }else{
-            $noticia->image_id = null;
+            $persona->image_id = null;
         }
         if($data['twitter']){
             $persona->twitter = $data['twitter'];
         }else{
-            $persona->twitter ='';
+            $persona->twitter =null;
         }
         if($data['twitter']){
             $persona->facebook = $data['facebook'];
         }else{
-            $persona->facebook ='';
+            $persona->facebook =null;
         }
         $persona->save();
         return response()->json(['success' => 'Persona registrada exitosamente'], 200);

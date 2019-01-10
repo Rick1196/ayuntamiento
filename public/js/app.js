@@ -51140,7 +51140,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             axios.post('api/postPersona', {
                 nombre: this.persona.nombre,
-                apellidos: this.persona.apellidos,
+                apellidos: this.persona.apellido,
                 descripcion: this.persona.descripcion,
                 desc_puesto: this.persona.desc_puesto,
                 image: this.persona.image,

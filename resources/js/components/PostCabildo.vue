@@ -124,7 +124,7 @@ export default {
             axios.post('api/postPersona',
                 {
                     nombre:this.persona.nombre,
-                    apellidos:this.persona.apellidos,
+                    apellidos:this.persona.apellido,
                     descripcion:this.persona.descripcion,
                     desc_puesto:this.persona.desc_puesto,
                     image:this.persona.image,

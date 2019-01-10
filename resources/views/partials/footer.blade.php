@@ -2,8 +2,8 @@
       <!-- <footer class="footer bg-dark text-white" style="height: 200px">
         
       </footer> -->
-      <footer class="footer bg-dark" role="contentinfo" style="height: 200px;">
-        <div class="footer-top p-y-2">
+      <footer class="footer"  style="height: 200px;background-color:#641c34;">
+        <div class="footer-top p-y-2"> 
           <div class="container-fluid">
             <div class="row">
               
