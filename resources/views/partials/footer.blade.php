@@ -22,10 +22,9 @@
             <div class="col-md-3 col-sm-6">
               <!--Column1-->
               <div class="footer-pad">
-                <h4>TOLUCA</h4>
                 <address>
-                      
-                    </address>
+                  <img src="{{asset('img/icon.png')}}" width="130" height="150" alt="TOLUCA">
+                </address>
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
