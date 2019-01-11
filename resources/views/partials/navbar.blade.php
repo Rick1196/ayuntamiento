@@ -49,7 +49,7 @@
                   <a class="dropdown-item" href="/documentos_publicos">
                      DOCUMENTOS PUBLICOS
                   </a>
-                  <a class="dropdown-item" href="">
+                  <a class="dropdown-item" href="/transparencia_activa">
                       TRANSPARENCIA ACTIVA
                   </a>
                   <a class="dropdown-item" href="{{ route('app.licitaciones') }}">
