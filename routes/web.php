@@ -17,7 +17,7 @@ Route::get('/cabildo','PersonasController@index')->name('app.cabildo');
 Route::get('/prensa','NoticiasController@index')->name('app.prensa');
 Route::view('/contacto','app.contacto')->name('app.contacto');
 Route::get('/toluca','SitiosController@index');
-Route::view('/transparencia','app.transparencia')->name('app.transparencia');
+Route::view('/transparencia_ipomex','app.transparencia')->name('app.transparencia');
 Route::view('/transparencia_docs_publicos','app.docs_publicos')->name('app.docs_publicos');
 Route::view('/transparencia_licitaciones','app.licitaciones')->name('app.licitaciones');
 
