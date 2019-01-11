@@ -9,7 +9,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img style="width:100vw;heigth:100vh;" class="first-slide img-fluid" src="{{asset('img/logo2m.jpg')}}" alt="First slide">
+            <img style="max-width:100vw" class="first-slide img-fluid" src="{{asset('img/logo2m.jpg')}}" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-right">
               <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
