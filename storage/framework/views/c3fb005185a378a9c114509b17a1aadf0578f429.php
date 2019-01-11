@@ -24,14 +24,12 @@
                   <a class="dropdown-item" href="<?php echo e(route('app.prensa')); ?>">
                     Noticias
                   </a>
-                  <a class="dropdown-item" href="">
-                     Galeria de imagenes
-                  </a>
           </div>
         </li>
+        <!--
         <li class="nav-item">
           <a class="nav-link" href="<?php echo e(route('app.dependencias')); ?>">DEPENDENCIAS</a>
-        </li>
+        </li>-->
         <li class="nav-item">
           <a class="nav-link" href="<?php echo e(route('tramites.servicios')); ?>">TRÁMITES Y SERVICIOS</a>
         </li>
@@ -48,7 +46,7 @@
                   <a class="dropdown-item" href="<?php echo e(route('app.transparencia')); ?>">
                     IPOMEX
                   </a>
-                  <a class="dropdown-item" href="<?php echo e(route('app.docs_publicos')); ?>">
+                  <a class="dropdown-item" href="/documentos_publicos">
                      DOCUMENTOS PUBLICOS
                   </a>
                   <a class="dropdown-item" href="">
@@ -57,6 +55,12 @@
                   <a class="dropdown-item" href="<?php echo e(route('app.licitaciones')); ?>">
                       LICITACIONES
                   </a>
+                  <?php if(auth()->guard()->guest()): ?>
+                  <?php else: ?>
+                  <a class="dropdown-item" href="/docs_pub">
+                     ADMINISTRAR DOCUMENTOS PUBLICOS
+                  </a>
+                  <?php endif; ?>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -68,9 +72,6 @@
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="<?php echo e(route('app.contacto')); ?>">
                       CONTACTO
-                    </a>
-                    <a class="dropdown-item" href="">
-                       NUMEROS DE EMERGENCIA
                     </a>
             </div>
         </li>
@@ -87,6 +88,9 @@
                   </a>
                   <a class="dropdown-item" href="<?php echo e(route('admin.noticias')); ?>">
                       Administrar prensa
+                  </a>
+                  <a class="dropdown-item" href="<?php echo e(route('admin.sitios')); ?>">
+                      Administrar directorio turistico
                   </a>
                   <a class="dropdown-item" href="<?php echo e(route('admin.cabildo')); ?>">
                       Administrar cabildo

@@ -18,15 +18,10 @@
     })
 </script>
 <script>
-  $(document).ready(function() {
-    $(".btn-success").click(function(){ 
-        var html = $(".clone").html();
-        $(".increment").after(html);
-    });
+$(window).ready(function() {
+    $(".bg_load").fadeOut("slow");
+    $(".wrapper").fadeOut("slow");
+    $("main").fadeIn("fast");
+})
 
-    $("body").on("click",".btn-danger",function(){ 
-        $(this).parents(".control-group").remove();
-    });
-
-  });
 </script>

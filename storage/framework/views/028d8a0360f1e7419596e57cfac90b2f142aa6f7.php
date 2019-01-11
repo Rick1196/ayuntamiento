@@ -15,72 +15,79 @@
         <?php else: ?>
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                 <ul class="nav navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link active" href="/">H. AYUNTAMIENTO</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/cabildo">CABILDO</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    PRENSA
-                </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">H. AYUNTAMIENTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cabildo">CABILDO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            PRENSA
+                        </a>
 
-                <a class="nav-link" href="/prensa"></a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="<?php echo e(route('app.prensa')); ?>">
-                            Noticias
+                        <a class="nav-link" href="/prensa"></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="<?php echo e(route('app.prensa')); ?>">
+                                    Noticias
+                                </a>
+                                <a class="dropdown-item" href="">
+                                    Galeria de imagenes
+                                </a>
+                        </div>
+                    </li>
+                    <!--
+                    <li class="nav-item">
+                            <a class="nav-link" href="<?php echo e(route('app.dependencias')); ?>">DEPENDENCIAS</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo e(route('tramites.servicios')); ?>">TRÁMITES Y SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/toluca">NUESTRO MUNICIPIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                         TRANSPARENCIA
                         </a>
-                        <a class="dropdown-item" href="">
-                            Galeria de imagenes
-                        </a>
-                </div>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="<?php echo e(route('app.dependencias')); ?>">DEPENDENCIAS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="<?php echo e(route('tramites.servicios')); ?>">TRÁMITES Y SERVICIOS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/toluca">NUESTRO MUNICIPIO</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    TRANSPARENCIA
-                </a>
 
-                <a class="nav-link" href="/transaperencia"></a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="<?php echo e(route('app.transparencia')); ?>">
-                            IPOMEX
-                        </a>
-                        <a class="dropdown-item" href="">
-                            DOCUMENTOS PUBLICOS
-                        </a>
-                        <a class="dropdown-item" href="">
-                            TRANSPARENCIA ACTIVA
-                        </a>
-                        <a class="dropdown-item" href="">
-                            LICITACIONES
-                        </a>
-                </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        CONTACTO
-                    </a>
-        
-                    <a class="nav-link" href="/contacto"></a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="<?php echo e(route('app.contacto')); ?>">
+                    <a class="nav-link" href="/transaperencia"></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/documentos_publicos">
+                                    IPOMEX
+                                </a>
+                                <a class="dropdown-item" href="">
+                                    DOCUMENTOS PUBLICOS
+                                </a>
+                                <a class="dropdown-item" href="">
+                                    TRANSPARENCIA ACTIVA
+                                </a>
+                                <a class="dropdown-item" href="">
+                                    LICITACIONES
+                                </a>
+                                <?php if(auth()->guard()->guest()): ?>
+                            <?php else: ?>
+                            <a class="dropdown-item" href="/docs_pub">
+                                ADMINISTRAR DOCUMENTOS PUBLICOS
+                            </a>
+                            <?php endif; ?>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             CONTACTO
-                            </a>
-                            <a class="dropdown-item" href="">
-                            NUMEROS DE EMERGENCIA
-                            </a>
-                    </div>
-                </li>
+                        </a>
+            
+                        <a class="nav-link" href="/contacto"></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="<?php echo e(route('app.contacto')); ?>">
+                                CONTACTO
+                                </a>
+                                <a class="dropdown-item" href="">
+                                NUMEROS DE EMERGENCIA
+                                </a>
+                        </div>
+                    </li>
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
@@ -92,6 +99,9 @@
                             </a>
                             <a class="dropdown-item" href="<?php echo e(route('admin.noticias')); ?>">
                                 Administrar noticas
+                            </a>
+                            <a class="dropdown-item" href="<?php echo e(route('admin.sitios')); ?>">
+                                Administrar directorio turistico
                             </a>
                             <a class="dropdown-item" href="<?php echo e(route('admin.cabildo')); ?>">
                                 Administrar cabildo

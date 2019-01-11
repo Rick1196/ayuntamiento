@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('content')
-<div >
+<div ><br><br>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -9,7 +9,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img style="max-width:100%" class="first-slide img-responsive img-fluid" src="{{asset('img/logo.jpg')}}" alt="First slide">
+            <img style="max-width:100%" class="first-slide img-responsive img-fluid" src="{{asset('img/logo2.jpg')}}" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
@@ -84,12 +84,8 @@
           </div>
       </div> --}}
       
-      <div class="parallax-window" data-parallax="scroll" data-image-src="{{ asset('img/volcan-min.jpg') }}"></div>
-      <div class="row view"  id="sectionlarge">
+      <div class="row view" id="sectionlarge">
         <img src="{{ asset('img/volcan-min.jpg') }}">
-        <div class="mask pattern-1 flex-center waves-effect waves-light">
-                <p class="white-text">NEVADO TOLUCA</p>
-              </div>
       </div> <br><br>
       
       <div class="container">

@@ -8,3 +8,4 @@
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!-- Custom styles for this template -->
 <link href="<?php echo e(asset('css/carousel.css')); ?>" rel="stylesheet">
+<link href="<?php echo e(asset('css/loader.css')); ?>" rel="stylesheet">

@@ -4,7 +4,8 @@
     @include('partials.header')
     @yield('css')
 </head>
-<body>
+</head>
+<body >
     @include('partials.navbar')
     <main role="main" id="contenedor">
         @yield('content')
@@ -12,5 +13,17 @@
     </main>
     @include('partials.footer')
     @include('partials.scripts')
+
+    <div class="bg_load"></div>
+    <div class="wrapper">
+        <div class="inner">
+            <span>T</span>
+            <span>o</span>
+            <span>l</span>
+            <span>u</span>
+            <span>c</span>
+            <span>a</span>
+        </div>
+    </div>
 </body>
 </html>

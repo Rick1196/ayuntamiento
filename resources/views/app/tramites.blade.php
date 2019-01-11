@@ -64,7 +64,7 @@
             </div><br>
             <div class="container">
                 <center>
-                    <a href="{{route('gestion.municipal')}}"><img  class="img-fluid border border-danger" src="{{asset('img/gestiones.png')}}" alt=""></a>
+                    <a href="https://www.secogem.gob.mx/SAM/sit_atn_mex.asp"><img  class="img-fluid border border-danger" src="{{asset('img/gestiones.png')}}" alt=""></a>
                 </center>
             </div><br><br>
     </div>

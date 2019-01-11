@@ -16,12 +16,14 @@ Route::get('/','PostsController@inicio')->name('welcome');
 Route::get('/cabildo','PersonasController@index')->name('app.cabildo');
 Route::get('/prensa','NoticiasController@index')->name('app.prensa');
 Route::view('/contacto','app.contacto')->name('app.contacto');
-Route::view('/toluca','app.toluca');
+Route::get('/toluca','SitiosController@index');
 Route::view('/transparencia','app.transparencia')->name('app.transparencia');
 Route::view('/transparencia_docs_publicos','app.docs_publicos')->name('app.docs_publicos');
 Route::view('/transparencia_licitaciones','app.licitaciones')->name('app.licitaciones');
 
 Route::view('/dependencias','app.dependencias')->name('app.dependencias');
+Route::get('/documentos_publicos','docs@publicos');
+Route::view('/transparencia_activa','app.transparencia_activa')->name('tranparencia_activa');
 
 Route::view('/tramites-servicios','app.tramites')->name('tramites.servicios');
 Route::view('/gestion-municipal','app.gestiones')->name('gestion.municipal');
@@ -41,7 +43,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/administracion', 'UsersController@admin')->name('administracion');
     Route::get('file','FileController@create');
     Route::post('file','FileController@store');
+    Route::post('docs_pub','docs@store');
+    Route::get('docs_pub','docs@create');
     Route::view('/admNoticias','.users.admNoticias')->name('admin.noticias');
     Route::view('/admCabildo','.users.admCabildo')->name('admin.cabildo');
-
+    Route::view('/admSitios','.users.admSitios')->name('admin.sitios');
 });
