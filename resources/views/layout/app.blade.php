@@ -14,16 +14,11 @@
     @include('partials.footer')
     @include('partials.scripts')
 
-    <div class="bg_load"></div>
+    <div class="bg_load">
+            <img src="{{asset('img/LogoTOLUCA.jpg')}}" style=" height: 100%;width:100%;background-position: center;background-repeat: no-repeat;background-size: cover;" alt="Toluca">
+    </div>
     <div class="wrapper">
         <div class="inner">
-            <span>T</span>
-            <span>o</span>
-            <span>l</span>
-            <span>u</span>
-            <span>c</span>
-            <span>a</span>
-           <span>Municipio</span>
         </div>
     </div>
 </body>

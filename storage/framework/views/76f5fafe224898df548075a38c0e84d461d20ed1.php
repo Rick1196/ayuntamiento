@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
-<div ><br><br>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div  style="width:100vw"  ><br><br>
+<div id="myCarousel" class="carousel slide"data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -11,10 +11,15 @@
             <img style="max-width:100%" class="first-slide img-responsive img-fluid" src="<?php echo e(asset('img/logo2.jpg')); ?>" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-right">
-                <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
-                <p  style="background-color:transparent; color: #85261e"> Cambios que generan bienestar para ti</p>
+               
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
               </div>
+              <div class="carousel-caption d-noe d-d-block">
+                <div style="position:relative;top: -190px;">
+                <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
+                <p  style="background-color:white; color: #85261e"> Cambios que generan bienestar para ti</p>
+                </div>
+                </div>
             </div>
           </div>
           <?php $__currentLoopData = $banner; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $im): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -30,18 +35,8 @@
               </div>
             </div>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-          <!--
-          <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>-->
-        </div>
+          
+          
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>

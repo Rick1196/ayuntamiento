@@ -19,8 +19,8 @@
 </script>
 <script>
 $(window).ready(function() {
-    $(".bg_load").delay(3000).fadeOut("slow");
     $(".wrapper").delay(3000).fadeOut("slow");
+    $(".bg_load").delay(3000).fadeOut("slow");
     $("main").fadeIn("fast");
 })
 
