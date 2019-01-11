@@ -9,7 +9,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img style="max-width:100%" class="first-slide img-responsive img-fluid" src="{{asset('img/logo2.jpg')}}" alt="First slide">
+            <img style="max-width:100%" class="first-slide img-fluid" src="{{asset('img/logo2m.jpg')}}" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-right">
                
