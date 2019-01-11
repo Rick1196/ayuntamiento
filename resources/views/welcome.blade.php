@@ -9,16 +9,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img style="max-width:100vw" class="first-slide img-fluid" src="{{asset('img/logo2m.jpg')}}" alt="First slide">
+            <img style="max-width:100vw" class="first-slide img-fluid" src="{{asset('img/logo2m2.jpg')}}" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-right">
               <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
                 <p  style="background-color:white; color: #85261e"> Cambios que generan bienestar para ti</p>
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
-              </div>
+              </div><br><br>
               <div class="carousel-caption d-noe d-d-block">
-                <div style="position:relative;top: -190px;">
-                
+                <div style="position:relative;top: -180px;">
+                  <img style="max-width:100%" class="img-fluid" src="{{asset('img/LogoTOLUCA.png')}}">
                 </div>
                 </div>
             </div>
