@@ -12,7 +12,7 @@
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
-                <p style="background-color:transparent; color: red"> Cambios que generan bienestar para ti</p>
+                <p style="background-color:transparent; color: #85261e"> Cambios que generan bienestar para ti</p>
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
               </div>
             </div>
