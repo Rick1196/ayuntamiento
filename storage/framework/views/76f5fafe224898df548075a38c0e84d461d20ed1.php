@@ -8,16 +8,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img style="max-width:100%" class="first-slide img-fluid" src="<?php echo e(asset('img/logo2m.jpg')); ?>" alt="First slide">
+            <img style="width:100vw;heigth:100vh;" class="first-slide img-fluid" src="<?php echo e(asset('img/logo2m.jpg')); ?>" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-right">
-               
+              <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
+                <p  style="background-color:white; color: #85261e"> Cambios que generan bienestar para ti</p>
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
               </div>
               <div class="carousel-caption d-noe d-d-block">
                 <div style="position:relative;top: -190px;">
-                <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
-                <p  style="background-color:white; color: #85261e"> Cambios que generan bienestar para ti</p>
+                
                 </div>
                 </div>
             </div>
