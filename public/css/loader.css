@@ -5,7 +5,6 @@
 	width: 100%;
 	height: 100%;
     background: #EEE;
-    background-image: url("../img/LogoTOLUCA.jpg");
 }
 
 .wrapper {
@@ -18,7 +17,6 @@
     top: 50%;
     margin-top: -100px;
     margin-left: -100px;
-	background-image: url("../img/LogoTOLUCA.jpg");
     /* Styles */
 	border-radius: 50%;
     background: rgba(255,255,255,0.1);
