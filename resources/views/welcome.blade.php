@@ -18,7 +18,7 @@
               </div><br><br>
               <div class="carousel-caption d-noe d-d-block">
                 <div style="position:relative;top: -200px;">
-                  <img style="max-width:43%" class="img-fluid" src="{{asset('img/LogoTOLUCA.png')}}">
+                  <img style="max-width:43%" class="img-fluid" src="{{asset('img/logoTolBlack.jpg')}}">
                 </div>
                 </div>
             </div>
@@ -54,23 +54,16 @@
         </h3><br><br>
       </div>
       <div>
-        <div class="row">
-          <div class="col-sm-12 col-md-6" id="unoslide" >
-            <img src="{{ asset('img/beca1.jpg') }}" class="img-flui t img-responsive">
+      <div>
+          <div>
+              <img src="{{ asset('img/beca1.jpg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive">
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="row">
-              <div class="col-md-6 col-sm-12" >
-                <img src="{{ asset('img/beca2.jpg') }}" class="img-fluid img-responsive" id="dosslid" >
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6" >
-                <img src="{{ asset('img/beca3.jpg') }}" class="img-fluid img-responsive" id="tresslid">
-              </div>
-            </div>
+          <div>
+              <img src="{{ asset('img/beca2.jpg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive" >
           </div>
-        </div>
+          <div>
+              <img src="{{ asset('img/beca3.jpg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive">
+          </div>
       </div>
       {{-- <div class="view">
         <img src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" class="img-fluid" alt="Image of ballons flying over canyons with mask pattern one.">

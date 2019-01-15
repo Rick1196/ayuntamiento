@@ -31,9 +31,6 @@
                                 <a class="dropdown-item" href="<?php echo e(route('app.prensa')); ?>">
                                     Noticias
                                 </a>
-                                <a class="dropdown-item" href="">
-                                    Galeria de imagenes
-                                </a>
                         </div>
                     </li>
                     <!--
@@ -53,16 +50,16 @@
 
                     <a class="nav-link" href="/transaperencia"></a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/documentos_publicos">
+                                <a class="dropdown-item" href="/transparencia_ipomex">
                                     IPOMEX
                                 </a>
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="/documentos_publicos">
                                     DOCUMENTOS PUBLICOS
                                 </a>
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="/transparencia_activa">
                                     TRANSPARENCIA ACTIVA
                                 </a>
-                                <a class="dropdown-item" href="">
+                                <a class="dropdown-item" href="<?php echo e(route('app.licitaciones')); ?>">
                                     LICITACIONES
                                 </a>
                                 <?php if(auth()->guard()->guest()): ?>
@@ -82,9 +79,6 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="<?php echo e(route('app.contacto')); ?>">
                                 CONTACTO
-                                </a>
-                                <a class="dropdown-item" href="">
-                                NUMEROS DE EMERGENCIA
                                 </a>
                         </div>
                     </li>
