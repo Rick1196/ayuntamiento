@@ -18,7 +18,7 @@
               </div><br><br>
               <div class="carousel-caption d-noe d-d-block">
                 <div style="position:relative;top: -200px;">
-                  <img style="max-width:43%" class="img-fluid" src="{{asset('img/logoTolBlack.jpg')}}">
+                  <img style="max-width:43%" class="img-fluid" src="{{asset('img/LogoTOLUCA.png')}}">
                 </div>
                 </div>
             </div>
