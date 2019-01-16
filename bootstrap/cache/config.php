@@ -36,10 +36,11 @@
       19 => 'Illuminate\\Translation\\TranslationServiceProvider',
       20 => 'Illuminate\\Validation\\ValidationServiceProvider',
       21 => 'Illuminate\\View\\ViewServiceProvider',
-      22 => 'App\\Providers\\AppServiceProvider',
-      23 => 'App\\Providers\\AuthServiceProvider',
-      24 => 'App\\Providers\\EventServiceProvider',
-      25 => 'App\\Providers\\RouteServiceProvider',
+      22 => 'Intervention\\Image\\ImageServiceProvider',
+      23 => 'App\\Providers\\AppServiceProvider',
+      24 => 'App\\Providers\\AuthServiceProvider',
+      25 => 'App\\Providers\\EventServiceProvider',
+      26 => 'App\\Providers\\RouteServiceProvider',
     ),
     'aliases' => 
     array (
@@ -76,6 +77,7 @@
       'URL' => 'Illuminate\\Support\\Facades\\URL',
       'Validator' => 'Illuminate\\Support\\Facades\\Validator',
       'View' => 'Illuminate\\Support\\Facades\\View',
+      'Image' => 'Intervention\\Image\\Facades\\Image',
     ),
   ),
   'auth' => 
@@ -217,7 +219,7 @@
       'mysql' => 
       array (
         'driver' => 'mysql',
-        'host' => '172.17.0.2',
+        'host' => '172.17.0.4',
         'port' => '3306',
         'database' => 'muntol',
         'username' => 'root',
@@ -233,7 +235,7 @@
       'pgsql' => 
       array (
         'driver' => 'pgsql',
-        'host' => '172.17.0.2',
+        'host' => '172.17.0.4',
         'port' => '3306',
         'database' => 'muntol',
         'username' => 'root',
@@ -247,7 +249,7 @@
       'sqlsrv' => 
       array (
         'driver' => 'sqlsrv',
-        'host' => '172.17.0.2',
+        'host' => '172.17.0.4',
         'port' => '3306',
         'database' => 'muntol',
         'username' => 'root',
@@ -319,6 +321,10 @@
       'threads' => 2,
       'time' => 2,
     ),
+  ),
+  'image' => 
+  array (
+    'driver' => 'gd',
   ),
   'logging' => 
   array (
