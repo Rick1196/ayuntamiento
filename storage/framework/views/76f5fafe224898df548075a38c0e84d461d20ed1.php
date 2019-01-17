@@ -16,8 +16,8 @@
                 <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>-->
               </div><br><br>
               <div class="carousel-caption d-noe d-d-block">
-                <div style="position:relative;top: -200px;">
-                  <img style="max-width:43%" class="img-fluid" src="<?php echo e(asset('img/logoTolBlack.jpg')); ?>" height="200" width="200">
+                <div style="position:relative;top: -160px;">
+                  <img style="max-width:43%" class="img-fluid" src="<?php echo e(asset('img/logoTolBlack.png')); ?>" height="170" width="300">
                 </div>
                 </div>
             </div>

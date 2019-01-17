@@ -219,7 +219,7 @@
       'mysql' => 
       array (
         'driver' => 'mysql',
-        'host' => '172.17.0.4',
+        'host' => '172.17.0.3',
         'port' => '3306',
         'database' => 'muntol',
         'username' => 'root',
@@ -235,7 +235,7 @@
       'pgsql' => 
       array (
         'driver' => 'pgsql',
-        'host' => '172.17.0.4',
+        'host' => '172.17.0.3',
         'port' => '3306',
         'database' => 'muntol',
         'username' => 'root',
@@ -249,7 +249,7 @@
       'sqlsrv' => 
       array (
         'driver' => 'sqlsrv',
-        'host' => '172.17.0.4',
+        'host' => '172.17.0.3',
         'port' => '3306',
         'database' => 'muntol',
         'username' => 'root',
