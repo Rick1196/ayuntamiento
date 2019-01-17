@@ -13,7 +13,7 @@
     </main>
     <?php echo $__env->make('partials.footer', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <?php echo $__env->make('partials.scripts', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-
+    <?php echo $__env->make('partials.scripts1', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
     <div class="bg_load">
             <img src="<?php echo e(asset('img/LogoTOLUCA.jpg')); ?>" style=" height: 100%;width:100%;background-position: center;background-repeat: no-repeat;background-size: cover;" alt="Toluca">
     </div>

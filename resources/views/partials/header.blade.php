@@ -10,3 +10,19 @@
 <!-- Custom styles for this template -->
 <link href="{{ asset('css/carousel.css') }}" rel="stylesheet">
 <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
+ <!-- Revolution Slider CSS -->
+ <link href="{{asset('css/themecss/revolution-slider.css')}}" rel="stylesheet">
+
+<!-- Lightbox CSS -->
+<link href="{{asset('css/themecss/lightbox.css')}}" rel="stylesheet">
+
+<!-- Animate CSS -->
+<link href="{{asset('css/themecss/animate.css')}}" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link href="{{asset('css/smarton.css')}}" rel="stylesheet">
+
+<!-- Color CSS -->
+<link href="{{asset('css/colors/color-default.css')}}" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('css/toastr/toastr.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/sweetalert/sweetalert.css') }}">

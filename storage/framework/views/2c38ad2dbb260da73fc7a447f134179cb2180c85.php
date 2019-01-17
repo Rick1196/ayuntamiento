@@ -10,3 +10,19 @@
 <!-- Custom styles for this template -->
 <link href="<?php echo e(asset('css/carousel.css')); ?>" rel="stylesheet">
 <link href="<?php echo e(asset('css/loader.css')); ?>" rel="stylesheet">
+ <!-- Revolution Slider CSS -->
+ <link href="<?php echo e(asset('css/themecss/revolution-slider.css')); ?>" rel="stylesheet">
+
+<!-- Lightbox CSS -->
+<link href="<?php echo e(asset('css/themecss/lightbox.css')); ?>" rel="stylesheet">
+
+<!-- Animate CSS -->
+<link href="<?php echo e(asset('css/themecss/animate.css')); ?>" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link href="<?php echo e(asset('css/smarton.css')); ?>" rel="stylesheet">
+
+<!-- Color CSS -->
+<link href="<?php echo e(asset('css/colors/color-default.css')); ?>" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo e(asset('css/toastr/toastr.min.css')); ?>">
+<link rel="stylesheet" href="<?php echo e(asset('css/sweetalert/sweetalert.css')); ?>">
