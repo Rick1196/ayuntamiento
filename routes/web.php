@@ -20,6 +20,9 @@ Route::get('/toluca','SitiosController@index');
 Route::view('/transparencia_ipomex','app.transparencia')->name('app.transparencia');
 Route::view('/transparencia_docs_publicos','app.docs_publicos')->name('app.docs_publicos');
 Route::view('/transparencia_licitaciones','app.licitaciones')->name('app.licitaciones');
+Route::view('/paseo_dominical','app.provs.carrera')->name('app.provs.carrera');
+Route::view('/cartilla_militar','app.provs.cartilla')->name('app.provs.cartilla');
+Route::view('/predial','app.provs.predial')->name('app.provs.predial');
 
 Route::view('/dependencias','app.dependencias')->name('app.dependencias');
 Route::get('/documentos_publicos','docs@publicos');

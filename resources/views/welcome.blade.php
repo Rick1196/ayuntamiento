@@ -51,18 +51,18 @@
         <h3 class="text-redm">
         CONVOCATORIAS/
         <small class="text-muted">TEMAS DE INTERÉS</small>
-        </h3><br><br>
+        </h3><br><br><br><br>
       </div>
       <div>
       <div>
           <div>
-              <img src="{{ asset('img/beca1.jpg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive">
+              <a href="/paseo_dominical"><img src="{{ asset('img/carrera_main.jpg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive"></a>
           </div>
           <div>
-              <img src="{{ asset('img/beca2.jpg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive" >
+              <a href="/predial"><img src="{{ asset('img/predial_main.jpg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive" ></a>
           </div>
           <div>
-              <img src="{{ asset('img/beca3.jpg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive">
+              <a href="/cartilla_militar"><img src="{{ asset('img/cartilla_main.jpeg') }}" style="max-width:100%;width: 100%" class="img-fluid img-responsive"></a>
           </div>
       </div>
       {{-- <div class="view">
