@@ -148,9 +148,10 @@
 </div>
 </div>
 </div>
-
-
-
+<div class="container">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1dJgoDBbm1Nrgjs8YoXIRN1FfetFueCg5" style="width:75vw; height:60vh;"></iframe>
+</div>
+<br><br>
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
