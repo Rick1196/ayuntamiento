@@ -34,7 +34,7 @@
                      data-endspeed="600"
                      data-endeasing="Power0.easeIn"
                      >
-                     <img src="img/logoTolBlack.png" style="position:relative;top: -160px;" width="330" height="330" alt="SmartOn">
+                     <img src="img/logoTolBlack.png" style="position:relative;top: -140px;" width="330" height="330" alt="SmartOn">
                 </div>
             </li>
             <li data-transition="slotslide-horizontal" data-slotamount="5" data-masterspeed="700" >
@@ -293,6 +293,7 @@
 </div>
 </div>
 </div>
+<br><br>
 <div class="container">
     <iframe src="https://www.google.com/maps/d/embed?mid=1dJgoDBbm1Nrgjs8YoXIRN1FfetFueCg5" style="width:75vw; height:60vh;"></iframe>
 </div>
@@ -316,6 +317,23 @@
 </div>
 
 </div>
+
+<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content"  style="height:600px" >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <iframe src="https://www.google.com/maps/d/embed?mid=1dJgoDBbm1Nrgjs8YoXIRN1FfetFueCg5"style="width:55vw; height:60vh;" ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     
 <?php $__env->stopSection(); ?>
 
