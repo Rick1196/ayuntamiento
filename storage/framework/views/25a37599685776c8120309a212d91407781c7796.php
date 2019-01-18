@@ -9,6 +9,9 @@
 <script src="<?php echo e(elixir('js/app.js')); ?>"></script>
 <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 
+
+
+
 <script>
    $(document).ready(function(){
       $('.parallax-window').parallax({
@@ -19,8 +22,8 @@
 </script>
 <script>
 $(window).ready(function() {
-    $(".wrapper").delay(3000).fadeOut("slow");
-    $(".bg_load").delay(3000).fadeOut("slow");
+    $(".wrapper").delay(4000).fadeOut("slow");
+    $(".bg_load").delay(4000).fadeOut("slow");
     $("main").fadeIn("fast");
     $("#exampleModalCenter").modal("show");
 })

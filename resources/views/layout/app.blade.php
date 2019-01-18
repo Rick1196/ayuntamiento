@@ -12,9 +12,9 @@
         @section('title', 'CABILDO')
     </main>
     @include('partials.footer')
-    @include('partials.scripts')
     @include('partials.scripts1')
-    <div class="bg_load">
+    @yield('scriptcase')
+    <div class="bg_load"> 
             <img src="{{asset('img/LogoTOLUCA.jpg')}}" style=" height: 100%;width:100%;background-position: center;background-repeat: no-repeat;background-size: cover;" alt="Toluca">
     </div>
     <div class="wrapper">

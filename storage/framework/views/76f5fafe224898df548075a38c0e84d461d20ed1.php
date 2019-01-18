@@ -1,169 +1,103 @@
 <?php $__env->startSection('content'); ?>
-<br>
-<div class="fullwidthbanner-container" style="width:100vw">
-    <div class="fullwidthbanner" style="width:100vw">
-        <ul>
-            <li data-transition="slotslide-vertical" data-slotamount="5" data-masterspeed="700" >
-                <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200901-Toluca-And-Vicinity.jpg"  alt="slider3-bg" data-lazyload="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200901-Toluca-And-Vicinity.jpg" data-bgposition="center right" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="116" data-bgfitend="100" data-bgpositionend="center left">
-                <div class="caption very-large-strong color-white randomrotate"
-                     data-x="center"
-                     data-y="320"
-                     data-speed="900"
-                     data-start="800"
-                     data-easing="Power4.easeOut"
-                     data-endspeed="600"
-                     data-endeasing="Power0.easeIn">
-                     <h1 style="color: white; background-color:white;background:-webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">Municipio de Toluca.</h1>
-                     <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);"> Cambios que generan bienestar para ti</p>
-                </div>
-                <div class="caption medium-light text-center bg-color-default color-white randomrotate"
-                     data-x="center"
-                     data-y="410"
-                     data-speed="900"
-                     data-start="1000"
-                     data-easing="Power4.easeOut"
-                     data-endspeed="600"
-                     data-endeasing="Power0.easeIn">
-                </div>
-                <div class="caption very-large-strong color-white fade"
-                     data-x="center"
-                     data-y="140"
-                     data-speed="900"
-                     data-start="1200"
-                     data-easing="Power4.easeOut"
-                     data-endspeed="600"
-                     data-endeasing="Power0.easeIn"
-                     >
-                     <img src="img/logoTolBlack.png" style="position:relative;top: -140px;" width="330" height="330" alt="SmartOn">
-                </div>
-            </li>
-            <li data-transition="slotslide-horizontal" data-slotamount="5" data-masterspeed="700" >
-                <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200876-Toluca-And-Vicinity.jpg"  alt="slider1-bg" data-lazyload="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200876-Toluca-And-Vicinity.jpg" data-bgposition="bottom center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="top center">
-                <div class="caption very-large-strong color-white customin customout start" data-x="center" data-y="200" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000"	data-start="500"
-                     data-easing="Back.easeInOut" data-endspeed="300" >
-                    <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">AYUNTAMIENTO DE TOLUCA </p>
 
-                </div>
-                <div class="caption medium-light color-white text-center skewfromleft start" data-x="100" data-y="216" data-speed="800" data-endspeed="300" data-start="1200" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn">
-                    <span class="fa fa-square"></span>
-                </div>
-                <div class="caption medium-light color-white skewfromright start" data-x="right" data-hoffset="-100" data-y="216" data-speed="800" data-endspeed="300" data-start="1200" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn">
-                    <span class="fa fa-square"></span>
-                </div>
-                <div class="caption big-light color-white customin customout"
-                     data-x="center"
-                     data-y="270"
-                     data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                     data-start="1200"
-                     data-speed="600"
-                     data-easing="Linear.easeNone"
-                     data-endspeed="600"
-                     data-endeasing="Linear.easeNone">
-                    
-                </div>
-                <div class="caption big-light color-white customin customout"
-                     data-x="center"
-                     data-y="320"
-                     data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                     data-start="1800"
-                     data-speed="600"
-                     data-easing="Linear.easeNone"
-                     data-endspeed="600"
-                     data-endeasing="Linear.easeNone">
-                    
-                </div>
-                <div class="caption customin customout start" data-x="center" data-y="400" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000"	data-start="2000"
-                     data-easing="Back.easeInOut" data-endspeed="300"></div>
-            </li>
-            <li data-transition="parallaxtotop" data-slotamount="5" data-masterspeed="700">
-                <img src="https://www.gob.mx/cms/uploads/article/main_image/62896/Blog_Toluca.jpg"  alt="slider2-bg" data-lazyload="https://www.gob.mx/cms/uploads/article/main_image/62896/Blog_Toluca.jpg" data-bgposition="center center" data-kenburns="on" data-duration="8000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="center center">
-                <div class="caption very-large-light color-white customin customout start"
-                     data-x="center"
-                     data-y="center"
-                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                     data-speed="1000"
-                     data-start="800"
-                     data-easing="Back.easeInOut"
-                     data-endspeed="300">
-                     <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">GOBIERNO MUNICIPAL DE TOLUCA </p>
-                </div>
-                <div class="caption medium-strong color-white skewfromtop"
-                     data-x="center"
-                     data-y="390"
-                     data-speed="400"
-                     data-start="3800"
-                     data-easing="Cube.easeOut"
-                     data-endspeed="300"
-                </div>
-                <div class="caption medium-strong color-white text-center bg-color-default skewfromleft"
-                     data-x="200"
-                     data-y="150"
-                     data-speed="400"
-                     data-start="1200"
-                     data-easing="Cube.easeOut"
-                     data-endspeed="300"
-                     data-endeasing="Power1.easeIn">
-                </div>
-                <div class="caption medium-strong color-white bg-color-purple lft"
-                     data-x="center"
-                     data-y="100"
-                     data-speed="400"
-                     data-start="1600"
-                     data-easing="Cube.easeOut"
-                     data-endspeed="300"
-                     data-endeasing="Power1.easeIn">
-                </div>
-                <div class="caption medium-strong color-white bg-color-orange skewfromright"
-                     data-x="right"
-                     data-hoffset="-204"
-                     data-y="150"
-                     data-speed="400"
-                     data-start="2000"
-                     data-easing="Cube.easeOut"
-                     data-endspeed="300"
-                     data-endeasing="Power1.easeIn">
-                </div>
-                <div class="caption medium-strong color-white bg-color-info skewfromright"
-                     data-x="right"
-                     data-hoffset="-204"
-                     data-y="bottom"
-                     data-voffset="-150"
-                     data-speed="400"
-                     data-start="2400"
-                     data-easing="Cube.easeOut"
-                     data-endspeed="300"
-                     data-endeasing="Power1.easeIn">
-                </div>
-                <div class="caption medium-strong color-white bg-color-success lfb"
-                     data-x="center"
-                     data-y="bottom"
-                     data-voffset="-75"
-                     data-speed="400"
-                     data-start="2800"
-                     data-easing="Cube.easeOut"
-                     data-endspeed="300"
-                     data-endeasing="Power1.easeIn">
-                    
-                </div>
-                <div class="caption medium-strong color-white bg-color-danger skewfromleft"
-                     data-x="200"
-                     data-y="bottom"
-                     data-voffset="-150"
-                     data-speed="400"
-                     data-start="3200"
-                     data-easing="Cube.easeOut"
-                     data-endspeed="300"
-                     data-endeasing="Power1.easeIn">
-                  
-                </div>
-            </li>
-            
-        </ul>
-        <div class="tp-bannertimer tp-bottom"></div>
-    </div>
+<br>
+<div class="slider-wrapper">
+  <div class="fullwidthbanner-container" style="width:100vw">
+      <div class="fullwidthbanner" style="width:100vw">
+          <ul>
+              <li data-transition="slotslide-vertical" data-slotamount="5" data-masterspeed="700" >
+                  <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200901-Toluca-And-Vicinity.jpg"  alt="slider3-bg" data-lazyload="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200901-Toluca-And-Vicinity.jpg" data-bgposition="center right" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="116" data-bgfitend="100" data-bgpositionend="center left">
+                  <div class="caption very-large-strong color-white randomrotate"
+                      data-x="center"
+                      data-y="320"
+                      data-speed="900"
+                      data-start="800"
+                      data-easing="Power4.easeOut"
+                      data-endspeed="600"
+                      data-endeasing="Power0.easeIn">
+                      <h1 style="color: white; background-color:white;background:-webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">Municipio de Toluca.</h1>
+                      <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);"> Cambios que generan bienestar para ti</p>
+                  </div>
+                  <div class="caption medium-light text-center bg-color-default color-white randomrotate"
+                      data-x="center"
+                      data-y="410"
+                      data-speed="900"
+                      data-start="1000"
+                      data-easing="Power4.easeOut"
+                      data-endspeed="600"
+                      data-endeasing="Power0.easeIn">
+                  </div>
+                  <div class="caption very-large-strong color-white fade"
+                      data-x="center"
+                      data-y="140"
+                      data-speed="900"
+                      data-start="1200"
+                      data-easing="Power4.easeOut"
+                      data-endspeed="600"
+                      data-endeasing="Power0.easeIn"
+                      >
+                      <img src="img/logoTolBlack.png" style="position:relative;top: -30px;" width="150" height="150" alt="SmartOn">
+                  </div>
+              </li>
+              <li data-transition="slotslide-horizontal" data-slotamount="5" data-masterspeed="700" >
+                  <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200876-Toluca-And-Vicinity.jpg"  alt="slider1-bg" data-lazyload="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200876-Toluca-And-Vicinity.jpg" data-bgposition="bottom center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="top center">
+                  <div class="caption very-large-strong color-white customin customout start" data-x="center" data-y="200" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000"	data-start="500"
+                      data-easing="Back.easeInOut" data-endspeed="300" >
+                      <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">AYUNTAMIENTO DE TOLUCA </p>
+
+                  </div>
+                  <div class="caption medium-light color-white text-center skewfromleft start" data-x="100" data-y="216" data-speed="800" data-endspeed="300" data-start="1200" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn">
+                      <span class="fa fa-square"></span>
+                  </div>
+                  <div class="caption medium-light color-white skewfromright start" data-x="right" data-hoffset="-100" data-y="216" data-speed="800" data-endspeed="300" data-start="1200" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn">
+                      <span class="fa fa-square"></span>
+                  </div>
+                  <div class="caption big-light color-white customin customout"
+                      data-x="center"
+                      data-y="270"
+                      data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                      data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                      data-start="1200"
+                      data-speed="600"
+                      data-easing="Linear.easeNone"
+                      data-endspeed="600"
+                      data-endeasing="Linear.easeNone">
+                      
+                  </div>
+                  <div class="caption big-light color-white customin customout"
+                      data-x="center"
+                      data-y="320"
+                      data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                      data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                      data-start="1800"
+                      data-speed="600"
+                      data-easing="Linear.easeNone"
+                      data-endspeed="600"
+                      data-endeasing="Linear.easeNone">
+                      
+                  </div>
+                  <div class="caption customin customout start" data-x="center" data-y="400" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000"	data-start="2000"
+                      data-easing="Back.easeInOut" data-endspeed="300"></div>
+              </li>
+              <li data-transition="parallaxtotop" data-slotamount="5" data-masterspeed="700">
+                  <img src="https://www.gob.mx/cms/uploads/article/main_image/62896/Blog_Toluca.jpg"  alt="slider2-bg" data-lazyload="https://www.gob.mx/cms/uploads/article/main_image/62896/Blog_Toluca.jpg" data-bgposition="center center" data-kenburns="on" data-duration="8000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="center center">
+                  <div class="caption very-large-light color-white customin customout start"
+                      data-x="center"
+                      data-y="center"
+                      data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
+                      data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                      data-speed="1000"
+                      data-start="800"
+                      data-easing="Back.easeInOut"
+                      data-endspeed="300">
+                      <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">GOBIERNO MUNICIPAL DE TOLUCA </p>
+                  </div>
+              </li>
+              
+          </ul>
+          <div class="tp-bannertimer tp-bottom"></div>
+      </div>
+  </div>
 </div>
 <div  style="width:100vw"  ><br><br>
 <div id="myCarousel" class="carousel slide"data-ride="carousel">

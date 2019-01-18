@@ -1,10 +1,31 @@
+<script src="{{ elixir('js/jquery.js') }}"></script>
+<script src="{{ elixir('js/app.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+
+
+
+<script>
+   $(document).ready(function(){
+      $('.parallax-window').parallax({
+        naturalWidth: 600,
+        naturalHeight: 400
+      });
+    })
+</script>
+<script>
+$(window).ready(function() {
+    $(".wrapper").delay(4000).fadeOut("slow");
+    $(".bg_load").delay(4000).fadeOut("slow");
+    $("main").fadeIn("fast");
+    $("#exampleModalCenter").modal("show");
+})
+
+</script>
 <!-- Back To Top -->
 <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
 <!-- /Back To Top -->
 
-<!-- Preloader -->
-<div id="page-preloader"></div>
-<!-- /Preloader -->
 
 <!-- Javascripts
         ================================================== -->
