@@ -94,58 +94,8 @@
                       <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">GOBIERNO MUNICIPAL DE TOLUCA </p>
                   </div>
               </li>
-              {{-- <li data-transition="parallaxtoright" data-slotamount="7" data-masterspeed="1000"  data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7">
-                  <img src="img/theme/revolution/video-bg.jpg"  alt="video_bg"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-                  <div class="tp-caption tp-fade fadeout fullscreenvideo"
-                      data-x="0"
-                      data-y="0"
-                      data-speed="1000"
-                      data-start="1100"
-                      data-easing="Power4.easeOut"
-                      data-endspeed="1500"
-                      data-endeasing="Power4.easeIn"
-                      data-autoplay="true"
-                      data-autoplayonlyfirsttime="false"
-                      data-nextslideatend="true"
-                      data-forceCover="1" data-dottedoverlay="twoxtwo" data-aspectratio="16:9" data-forcerewind="on"			style="z-index: 2">
-
-                      <video class="video-js vjs-default-skin" preload="none" poster='img/theme/revolution/video-bg.jpg' data-setup="{}">
-                          <source src='http://fourgrafx.com/video/video1.mp4' type='video/mp4' />
-                          <source src='http://fourgrafx.com/video/video1.webm' type='video/webm' />
-                          <source src='http://fourgrafx.com/video/video1.ogv' type='video/ogg' />
-                      </video>
-                  </div>
-
-                  <div class="caption very-large-strong color-white customin customout tp-resizeme"
-                      data-x="center" data-hoffset="0"
-                      data-y="370"
-                      data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                      data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                      data-speed="900"
-                      data-start="800"
-                      data-easing="Power4.easeOut"
-                      data-endspeed="600"
-                      data-endeasing="Power0.easeIn"
-                      style="z-index: 3">
-                      HTML5 Video Background
-                  </div>
-
-                  <div class="caption medium-light color-white customin customout tp-resizeme"
-                      data-x="center" data-hoffset="0"
-                      data-y="440"
-                      data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                      data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                      data-speed="900"
-                      data-start="1200"
-                      data-easing="Power4.easeOut"
-                      data-endspeed="600"
-                      data-endeasing="Power0.easeIn"
-                      style="z-index: 3">
-                      Amazing easy to use videos as background.
-                  </div>
-              </li> --}}
           </ul>
-          <div class="tp-bannertimer tp-bottom"></div>
+
       </div>
   </div>
 </div>

@@ -835,12 +835,12 @@ box-shadow:         none;
 .tp-leftarrow.square-old:hover	{background-position:bottom left; background-color:transparent;}
 .tp-rightarrow.square-old:hover	{background-position:bottom right; background-color:transparent;}
 
-.tp-leftarrow.default									{	background:url(../img/theme/revolution/large_left.png) no-Repeat top left;	width:55px;	height:80px ;
+.tp-leftarrow.default									{	background:url(../img/theme/revolution/small_left.png) no-Repeat top left;	width:55px;	height:80px ;
 	background-color:#ffffff ; /* fallback for browser that not support rgba */
 	background-color:rgb(255,255,255) ; 
 	background-color: rgba(255,255,255, .6); /* Works on all modern browsers */ 
 	-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px ;}
-.tp-rightarrow.default { background:url(../img/theme/revolution/large_right.png) no-Repeat top left;width:55px;	height:80px;
+.tp-rightarrow.default { background:url(../img/theme/revolution/small_right.png) no-Repeat top left;width:55px;	height:80px;
 	background-color:#ffffff; /* fallback for browser that not support rgba */
 	background-color:rgb(255,255,255); 
 	background-color: rgba(255,255,255, .6); /* Works on all modern browsers */ 

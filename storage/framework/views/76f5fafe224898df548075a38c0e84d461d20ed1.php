@@ -93,9 +93,8 @@
                       <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">GOBIERNO MUNICIPAL DE TOLUCA </p>
                   </div>
               </li>
-              
           </ul>
-          <div class="tp-bannertimer tp-bottom"></div>
+
       </div>
   </div>
 </div>
