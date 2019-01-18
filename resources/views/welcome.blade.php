@@ -14,8 +14,8 @@
                      data-easing="Power4.easeOut"
                      data-endspeed="600"
                      data-endeasing="Power0.easeIn">
-                     <h1 class=" bg-dark text-white">Municipio de Toluca.</h1>
-                      <p  style="background-color:white; color: #85261e"> Cambios que generan bienestar para ti</p>
+                     <h1 style="color: white; background-color:white;background:-webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">Municipio de Toluca.</h1>
+                     <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);"> Cambios que generan bienestar para ti</p>
                 </div>
                 <div class="caption medium-light text-center bg-color-default color-white randomrotate"
                      data-x="center"
@@ -42,7 +42,8 @@
                 <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200876-Toluca-And-Vicinity.jpg"  alt="slider1-bg" data-lazyload="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200876-Toluca-And-Vicinity.jpg" data-bgposition="bottom center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="top center">
                 <div class="caption very-large-strong color-white customin customout start" data-x="center" data-y="200" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000"	data-start="500"
                      data-easing="Back.easeInOut" data-endspeed="300" >
-                    AYUNTAMIENTO DE TOLUCA
+                    <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">AYUNTAMIENTO DE TOLUCA </p>
+
                 </div>
                 <div class="caption medium-light color-white text-center skewfromleft start" data-x="100" data-y="216" data-speed="800" data-endspeed="300" data-start="1200" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn">
                     <span class="fa fa-square"></span>
@@ -88,7 +89,7 @@
                      data-start="800"
                      data-easing="Back.easeInOut"
                      data-endspeed="300">
-                    GOBIERNO MUNICIPAL DE TOLUCA
+                     <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">GOBIERNO MUNICIPAL DE TOLUCA </p>
                 </div>
                 <div class="caption medium-strong color-white skewfromtop"
                      data-x="center"
