@@ -15,8 +15,6 @@
                       data-easing="Power4.easeOut"
                       data-endspeed="600"
                       data-endeasing="Power0.easeIn">
-                      <h1 style="color: white; background-color:white;background:-webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">Municipio de Toluca.</h1>
-                      <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);"> Cambios que generan bienestar para ti</p>
                   </div>
  
                   <div class="caption very-large-strong color-white fade"
@@ -28,14 +26,15 @@
                       data-endspeed="600"
                       data-endeasing="Power0.easeIn"
                       >
-                      <img src="img/logoTolBlack.png" style="position:relative;top: -30px;" width="150" height="150" alt="SmartOn">
+                      <img src="img/logoTolBlack.png" style="position:relative;top: -300;" width="500" height="400" alt="SmartOn">
                   </div>
               </li>
               <li data-transition="slotslide-horizontal" data-slotamount="5" data-masterspeed="700" >
                   <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200876-Toluca-And-Vicinity.jpg"  alt="slider1-bg" data-lazyload="https://a.travel-assets.com/findyours-php/viewfinder/images/res60/200000/200876-Toluca-And-Vicinity.jpg" data-bgposition="bottom center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="top center">
                   <div class="caption very-large-strong color-white customin customout start" data-x="center" data-y="200" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed="1000"	data-start="500"
                       data-easing="Back.easeInOut" data-endspeed="300" >
-                      <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">AYUNTAMIENTO DE TOLUCA </p>
+                      <h1 style="color: white; background-color:white;background:-webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">Municipio de Toluca.</h1>
+                      <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);"> Cambios que generan bienestar para ti</p>
 
                   </div>
                   <div class="caption big-light color-white customin customout"
