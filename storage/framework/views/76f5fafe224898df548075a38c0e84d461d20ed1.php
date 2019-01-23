@@ -18,15 +18,7 @@
                       <h1 style="color: white; background-color:white;background:-webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">Municipio de Toluca.</h1>
                       <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);"> Cambios que generan bienestar para ti</p>
                   </div>
-                  <div class="caption medium-light text-center bg-color-default color-white randomrotate"
-                      data-x="center"
-                      data-y="410"
-                      data-speed="900"
-                      data-start="1000"
-                      data-easing="Power4.easeOut"
-                      data-endspeed="600"
-                      data-endeasing="Power0.easeIn">
-                  </div>
+ 
                   <div class="caption very-large-strong color-white fade"
                       data-x="center"
                       data-y="140"
@@ -45,12 +37,6 @@
                       data-easing="Back.easeInOut" data-endspeed="300" >
                       <p  style="background-color:white; background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(240,47,23,0.95) 5%, rgba(176,88,76,0.93) 7%, rgba(246,41,12,0.49) 51%, rgba(231,56,39,0) 100%);">AYUNTAMIENTO DE TOLUCA </p>
 
-                  </div>
-                  <div class="caption medium-light color-white text-center skewfromleft start" data-x="100" data-y="216" data-speed="800" data-endspeed="300" data-start="1200" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn">
-                      <span class="fa fa-square"></span>
-                  </div>
-                  <div class="caption medium-light color-white skewfromright start" data-x="right" data-hoffset="-100" data-y="216" data-speed="800" data-endspeed="300" data-start="1200" data-easing="Power4.easeOut" data-endeasing="Power1.easeIn">
-                      <span class="fa fa-square"></span>
                   </div>
                   <div class="caption big-light color-white customin customout"
                       data-x="center"
@@ -261,9 +247,11 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="container">
-              <iframe src="https://www.google.com/maps/d/embed?mid=1dJgoDBbm1Nrgjs8YoXIRN1FfetFueCg5"style="width:55vw; height:60vh;" ></iframe>
-          </div>
+          <center>
+            <div class="container">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1dJgoDBbm1Nrgjs8YoXIRN1FfetFueCg5"style="width:55vw; height:60vh;" ></iframe>
+            </div>
+          </center>
         </div>
       </div>
     </div>
